@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    .parent {
+      overflow: auto;
+      /* overflow-y: visible; */
+      /* width: 400px; */
+      /* padding: 20px; */
+      box-sizing: border-box;
+      /* margin: 0 auto; */
+      
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+      width: max-content;
+
+
+      padding: 20px 20px;
+      /* box-sizing: border-box; */
+    }
+
+    .wrap {
+      width: 100px;
+      height: 100px;
+      flex-shrink: 0;
+      box-shadow: 0 0 4px 4px red;
+    }
+
+    .last {
+      /* width: 2px;
+      height: 100px; */
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="parent">
+
+    <div class="container">
+      <div class="wrap"></div>
+      <div class="wrap"></div>
+      <div class="wrap"></div>
+      <div class="wrap"></div>
+      <div class="wrap"></div>
+      <div class="wrap"></div>
+
+      <!-- <div class="last"></div> -->
+    </div>
+  </div>
+</body>
+
+</html>
