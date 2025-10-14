@@ -4,6 +4,7 @@ import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
 
+// 攻略
 const tabs = [
   {
     text: '攻略',
@@ -54,6 +55,7 @@ const changeTab = (i: number) => {
 
 <template>
   <div>
+    <!-- 攻略 -->
     <input type="text" placeholder="攻略">
     我的
   </div>
