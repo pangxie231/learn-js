@@ -1,3 +1,95 @@
-import langs from './index'
+import { readFileSync, writeFileSync } from 'fs'
+import langs from './lang.js'
+import { glob } from 'glob'
+import path, { dirname } from 'path'
+import { fileURLToPath } from 'url'
 
 const zhLang = langs['zh']
+
+// 文件读取可传入glob
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
+
+// 读取文件
+async function readAssets(rule) {
+  const files = await glob(rule, { ignore: 'node_modules/**' })
+
+  // 双斜杠注释
+  const doubleSlash = /^\/\/.*?$/
+  // html注释
+  const htmlNotes = /^\s*<!--.*?-->.*?$/
+
+
+  for (const file of files) {
+    let data = readFileSync(path.join(__dirname, file), {
+      encoding: 'utf-8'
+    })
+
+    Object.entries(zhLang).forEach(([k, v]) => {
+      const baseReg = new RegExp(`^.*?${v}.*?$`, 'gm')
+
+      // console.log('🚀 ~ readAssets ~ baseReg:', baseReg)
+
+
+      // 匹配到的所有行
+      const lines = data.match(baseReg)
+
+
+
+      if (!lines) {
+        return
+      }
+      // console.log('🚀 ~ readAssets ~ lines:', lines)
+
+
+      // 去掉注释的行
+      const filterLines = lines.filter(line => {
+        return !(doubleSlash.test(line) || htmlNotes.test(line))
+      })
+
+      console.log('🚀 ~ readAssets ~ filterLines:', filterLines)
+
+
+
+
+      let ret = ''
+      const replaceLines = filterLines.forEach(line => {
+        const attrReg = new RegExp(`^.*?(\\w+)="(${v})".*?$`)
+
+        // 属性
+        if (attrReg.test(line)) {
+          const matches = line.match(attrReg)
+
+          // console.log('🚀 ~ readAssets ~ matches:', matches)
+
+          // line.
+          // matches[0]
+          // debugger
+          ret = line.replace(matches[1], ':$&').replace(matches[2], `$t(${k})`)
+
+        } else {
+          // 直接替换
+          ret = line.replace(new RegExp(`('|")${v}('|")`), `t('${k}')`)
+
+        }
+
+        // debugger
+
+        data = data.replace(line, ret)
+        console.log('data', data)
+      })
+    })
+
+    // 正常
+    // 带属性
+    // 有注释就忽略
+
+
+    writeFileSync(path.join(__dirname, file), data , {
+      encoding: 'utf-8'
+    })
+  }
+
+}
+
+readAssets('./*.vue')
