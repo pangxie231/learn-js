@@ -26,7 +26,10 @@ async function readAssets(rule) {
     })
     
     Object.entries(zhLang).forEach(([k, v]) => {
-      const baseReg = new RegExp(`^.*?${v}.*?$`, 'gm')
+      // ^[\s]*(<\w>)?攻略.*?$
+      // const baseReg = new RegExp(`^.*?${v}.*?$`, 'gm')
+      // v2版本
+      const baseReg = new RegExp(`^( )*(<\\w.*?>)?${v}.*?$`, 'gm')
       
       // 已经是多语言写法
       const alreadyT = new RegExp(`^.*?\\$?t\\(('|")${v}('|")\\).*?$`)
@@ -44,7 +47,7 @@ async function readAssets(rule) {
       }
       // console.log('🚀 ~ readAssets ~ lines:', lines)
 
-
+      // debugger
       // 去掉注释的行
       const filterLines = lines.filter(line => {
         return !(doubleSlash.test(line) || htmlNotes.test(line) || (alreadyT.test(line)))
@@ -59,7 +62,10 @@ async function readAssets(rule) {
       const replaceLines = filterLines.forEach(line => {
         const attrReg = new RegExp(`^.*?(\\w+)="(${v})".*?$`)
 
+        const tempReg = new RegExp(`^[^'\\n]*(${v})[^'\\n]*$`)
+
         // 属性
+        debugger
         if (attrReg.test(line)) {
           const matches = line.match(attrReg)
 
@@ -70,13 +76,17 @@ async function readAssets(rule) {
           // debugger
           ret = line.replace(matches[1], ':$&').replace(matches[2], `$t('${k}')`)
 
+          // template下的直接字符串
+        } else if(tempReg.test(line)) {
+          const matches =  line.match(tempReg)
+          ret = line.replace(matches[1], `{{ $t(${k}) }}`)
+
         } else {
           // 直接替换
           ret = line.replace(new RegExp(`('|")${v}('|")`), `t('${k}')`)
 
         }
 
-        // debugger
 
         data = data.replace(line, ret)
         // console.log('data', data)
