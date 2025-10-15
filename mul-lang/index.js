@@ -18,15 +18,18 @@ async function readAssets(rule) {
   const doubleSlash = /^\/\/.*?$/
   // html注释
   const htmlNotes = /^\s*<!--.*?-->.*?$/
-
-
+  
+  
   for (const file of files) {
     let data = readFileSync(path.join(__dirname, file), {
       encoding: 'utf-8'
     })
-
+    
     Object.entries(zhLang).forEach(([k, v]) => {
       const baseReg = new RegExp(`^.*?${v}.*?$`, 'gm')
+      
+      // 已经是多语言写法
+      const alreadyT = new RegExp(`^.*?\\$?t\\(('|")${v}('|")\\).*?$`)
 
       // console.log('🚀 ~ readAssets ~ baseReg:', baseReg)
 
@@ -44,7 +47,7 @@ async function readAssets(rule) {
 
       // 去掉注释的行
       const filterLines = lines.filter(line => {
-        return !(doubleSlash.test(line) || htmlNotes.test(line))
+        return !(doubleSlash.test(line) || htmlNotes.test(line) || (alreadyT.test(line)))
       })
 
       console.log('🚀 ~ readAssets ~ filterLines:', filterLines)
@@ -65,7 +68,7 @@ async function readAssets(rule) {
           // line.
           // matches[0]
           // debugger
-          ret = line.replace(matches[1], ':$&').replace(matches[2], `$t(${k})`)
+          ret = line.replace(matches[1], ':$&').replace(matches[2], `$t('${k}')`)
 
         } else {
           // 直接替换
@@ -76,7 +79,7 @@ async function readAssets(rule) {
         // debugger
 
         data = data.replace(line, ret)
-        console.log('data', data)
+        // console.log('data', data)
       })
     })
 
