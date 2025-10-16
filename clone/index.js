@@ -11,16 +11,19 @@ function clone(obj) {
 
   // 克隆Map
   if (valueType === 'Map') {
-    return new Map([...obj].map(([k, v]) => [k, v]))
+    return new Map([...obj].map(([k, v]) => [clone(k), clone(v)]))
   }
 
   // 克隆Date
   if (valueType === 'Date') {
-    result = new Date(obj.getTime())
+    return new Date(obj.getTime())
   }
 
 
   // 克隆RegExp
+  if (valueType === 'RegExp') {
+    return new RegExp(obj.source, getRegFlags(obj))
+  }
 
   // 克隆数组或者对象
   if (valueType === 'Array' || valueType === 'Object') {
@@ -32,6 +35,27 @@ function clone(obj) {
 
   return result
 }
+
+function getRegFlags(reg) {
+  if (reg.flags) {
+    return reg.flags
+  }
+
+  const flags = []
+
+  reg.indices && flags.push('d')
+  reg.global && flags.push('g')
+  reg.ignoreCase && flags.push('i')
+  reg.multiline && flags.push('m')
+  reg.dotAll && flags.push('s')
+  reg.unicode && flags.push('u')
+  reg.unicodeSets && flags('v')
+  reg.sticky && flags.push('y')
+
+  return flags.join('')
+}
+
+
 
 // var obj = {
 //   a: 1,
@@ -46,9 +70,13 @@ function clone(obj) {
 var obj = {
   // a: new Date()
   // a: new Set([1])
-  a: new Map([
-    ['a', 1]
-  ])
+  // a: new Map([
+  //   ['a', 1]
+  // ])
+  a: {
+    b: /\wa/,
+    c: /\wa/dgimsuy
+  }
 }
 var obj2 = clone(obj)
 
