@@ -32,7 +32,6 @@ export default {
     "攻略": "攻略",
     "助手": "助手",
     "我的": "我的",
-    " 返回": " 返回",
     "通关精华内容": "通关精华内容",
     "占位/截图/": "占位/截图/视频资源",
     "视频教学": "视频教学",
@@ -42,21 +41,7 @@ export default {
     "输出英雄": "输出英雄",
     "防御英雄": "防御英雄",
     "功能英雄": "功能英雄",
-    "第1顺位": "第1顺位",
-    "第2顺位": "第2顺位",
-    "第3顺位": "第3顺位",
-    "第4顺位": "第4顺位",
-    "第5顺位": "第5顺位",
-    "第6顺位": "第6顺位",
-    "第7顺位": "第7顺位",
-    "第8顺位": "第8顺位",
-    "第9顺位": "第9顺位",
-    "第10顺位": "第10顺位",
-    "第11顺位": "第11顺位",
-    "第12顺位": "第12顺位",
-    "第13顺位": "第13顺位",
-    "第14顺位": "第14顺位",
-    "第15顺位": "第15顺位",
+    "第{x}顺位": "第{x}顺位",
     "朝向向右": "朝向向右",
     "朝向向上": "朝向向上",
     "朝向向左": "朝向向左",
@@ -92,7 +77,7 @@ export default {
     "正在大批量取": "正在大批量取消收藏内容，是否确认取消收藏？",
     "请先选中要取": "请先选中要取消收藏的文章后，再次点击~",
     "暂无引用内容": "暂无引用内容，点击下方按钮去查看攻略吧~",
-    "剩余可引用次": "剩余可引用次数：3",
+    "剩余可引用次": "剩余可引用次数：{x}",
     "前往引用": "前往引用",
     "请先发布引用": "请先发布引用内容后继续引用",
     "查看原文": "查看原文",
@@ -144,7 +129,9 @@ export default {
     "非必填": "非必填",
     "装备页截图": "装备页截图",
     "神器页截图": "神器页截图",
-    "描述你的通关": "描述你的通关详细描述，可以帮助玩家更好的了解你的阵容搭配原因",
+    "描述你的通关": [
+      "描述你的通关详细描述，可以帮助玩家更好的了解你的阵容搭配原因"
+    ],
     "通关详细描述": "通关详细描述",
     "一键上传并解": "一键上传并解析",
     "地图选择": "地图选择",
@@ -160,7 +147,7 @@ export default {
     "地面位英雄": "地面位英雄",
     "星级排序": "星级排序",
     "费用排序": "费用排序",
-    "已选英雄：0": "已选英雄：0",
+    "已选英雄：{": "已选英雄：{x}",
     "在上方库或常": "在上方库或常用中，点击头像新增你要新增的内容",
     "英雄选择": "英雄选择",
     "取消": "取消",
@@ -173,16 +160,20 @@ export default {
     "辅助补充信息": "辅助补充信息",
     "其他信息": "其他信息",
     "阵容标题": "阵容标题",
-    "这里是阵容标": "这里是阵容标题，最多不能超过十五个字，点击这里就可以直接开始输入了",
+    "这里是阵容标": [
+      "这里是阵容标题，最多不能超过十五个字，点击这里就可以直接开始输入了"
+    ],
     "副标题": "副标题",
-    "这里是阵容标题": "这里是阵容标题，最多不能超过五十个字，点击这里就可以直接开始输入了",
+    "这里是阵容标题": [
+      "这里是阵容标题，最多不能超过五十个字，点击这里就可以直接开始输入了"
+    ],
     "发布": "发布",
     "点击英雄后，": "点击英雄后，选择其他英雄或空白位置进行替换",
     "点击此处替换": "点击此处替换完毕",
     "装备选择": "装备选择",
     "神器选择": "神器选择",
-    "已选装备：3": "已选装备：3",
-    "已选神器：0": "已选神器：0",
+    "已选装备：{": "已选装备：{x}",
+    "已选神器：{": "已选神器：{x}",
     "普通": "普通",
     "全部": "全部",
     "已选": "已选",
@@ -195,10 +186,18 @@ export default {
     "时间戳": "时间戳",
     "时间戳具体时": "时间戳具体时间范围",
     "如  01:": "如  01:06~03:35  等具体时间范围",
-    "这里是核心通": "这里是核心通关攻略，最多不能超过500个字，点击这里就可以直接开始输入了",
+    "这里是核心通": [
+      "这里是核心通关攻略，最多不能超过500个字，点击这里就可以直接开始输入了"
+    ],
     "保存草稿": "保存草稿",
-    "保存草稿后，": ["保存草稿后，在【攻略】页", "点击+号即可继续撰写本篇文章", "是否确认保存草稿？"],
-    "您已保存一篇": "您已保存一篇草稿，如需继续保存，则会覆盖往期草稿内容，是否确认继续？",
+    "保存草稿后，": [
+      "保存草稿后，在【攻略】页",
+      "点击+号即可继续撰写本篇文章",
+      "是否确认保存草稿？"
+    ],
+    "您已保存一篇": [
+      "您已保存一篇草稿，如需继续保存，则会覆盖往期草稿内容，是否确认继续？"
+    ],
     "保存长图并分": "保存长图并分享",
     "截图描述": "截图描述",
     "请输入本次截": "请输入本次截图上阵波次，及其他细节内容",
@@ -209,7 +208,258 @@ export default {
     "点击设置上阵": "点击设置上阵顺序",
     "不同英雄的朝": "不同英雄的朝向可相同，顺序不可相同",
     "点击输入上阵": "点击输入上阵顺序，仅可输入数字，≤15",
-    "保存": "保存"
+    "保存": "保存",
+    "请输入游戏内I": "请输入游戏内ID",
+    "请输入登录密码": "请输入登录密码",
+    "请输入游戏内ID": "请输入游戏内ID",
+    "请输入举报原因": "请输入举报原因",
+    "请输入区服ID": "请输入区服ID",
+    "正在删除您发布": "正在删除您发布的内容，是否确认删除？",
+    "第9顺位": "第9顺位",
+    "已选神器：0": "已选神器：0",
+    "核心/必备英雄": "核心/必备英雄",
+    "仅需要上传截图": [
+      "仅需要上传截图与较少文字即可发布攻略",
+      "你后期也可以将快捷攻略转换为详细攻略"
+    ],
+    "保存草稿后，在": [
+      "保存草稿后，在【攻略】页",
+      "点击+号即可继续撰写本篇文章",
+      "是否确认保存草稿？"
+    ],
+    "第2顺位": "第2顺位",
+    "不同英雄的朝向": "不同英雄的朝向可相同，顺序不可相同",
+    "点击此处替换完": "点击此处替换完毕",
+    "第12顺位": "第12顺位",
+    "【点击此处设置英": "【点击此处设置英雄信息】",
+    "已选装备：3": "已选装备：3",
+    "这里是阵容标题，": [
+      "这里是阵容标题，最多不能超过十五个字，点击这里就可以直接开始输入了"
+    ],
+    "点击此处输入如": [
+      "点击此处输入",
+      "如  阵容截图/上阵时机/装备截图/神器截图/关键信息/其他信息"
+    ],
+    "发布攻略类型选": "发布攻略类型选择",
+    "两件套/左侧装": "两件套/左侧装备",
+    "这里是核心通关": [
+      "这里是核心通关攻略，最多不能超过500个字，点击这里就可以直接开始输入了"
+    ],
+    "在上方库或常用": "在上方库或常用中，点击头像新增你要新增的内容",
+    "第13顺位": "第13顺位",
+    "这里是阵容标题，最": [
+      "这里是阵容标题，最多不能超过五十个字，点击这里就可以直接开始输入了"
+    ],
+    "非常推荐你填写": "非常推荐你填写，但这不是必须的",
+    "点击输入上阵顺": "点击输入上阵顺序，仅可输入数字，≤15",
+    "请输入攻略标题": "请输入攻略标题",
+    "Wiki入口按": "Wiki入口按钮预留",
+    "第1顺位": "第1顺位",
+    "正在大批量取消": "正在大批量取消收藏内容，是否确认取消收藏？",
+    "占位/截图/视": "占位/截图/视频资源",
+    "在上方库中，点": "在上方库中，点击头像新增你要新增的内容",
+    "第8顺位": "第8顺位",
+    "上传本次通关阵容": "上传本次通关阵容的游戏内截图",
+    "您已保存一篇草": [
+      "您已保存一篇草稿，如需继续保存，则会覆盖往期草稿内容，是否确认继续？"
+    ],
+    "点击输入英雄推": "点击输入英雄推荐理由",
+    "输入英雄/地图": "输入英雄/地图名称进行搜索，支持仅输入单字匹配",
+    "输入英雄名称进": "输入英雄名称进行搜索，支持仅输入单字匹配",
+    "第10顺位": "第10顺位",
+    "第4顺位": "第4顺位",
+    "暂无相关搜索内": "暂无相关搜索内容，请重新搜索",
+    "第7顺位": "第7顺位",
+    "副本强势英雄推": "副本强势英雄推荐",
+    "请输入修改后的": "请输入修改后的登录密码",
+    "请输入作者名称": "请输入作者名称",
+    "请输入本次截图": "请输入本次截图上阵波次，及其他细节内容",
+    "点击设置上阵顺": "点击设置上阵顺序",
+    "三件套/右侧装": "三件套/右侧装备",
+    "上传本次通关阵容的": "上传本次通关阵容的通关视频的上传",
+    "第3顺位": "第3顺位",
+    "时间戳具体时间": ["时间戳具体时间范围", "如  01:06~03:35  等具体时间范围"],
+    "点击任意空白处关": "点击任意空白处关闭",
+    " 返回": " 返回",
+    "快捷设置英雄信": "快捷设置英雄信息",
+    "第6顺位": "第6顺位",
+    "点击任意空白处退": "点击任意空白处退出",
+    "第11顺位": "第11顺位",
+    "点击此处选择本次": "点击此处选择本次阵容所用到的英雄",
+    "请至少选择一位": "请至少选择一位英雄后保存",
+    "暂无引用内容，": "暂无引用内容，点击下方按钮去查看攻略吧~",
+    "第14顺位": "第14顺位",
+    "描述你的通关详": [
+      "描述你的通关详细描述，可以帮助玩家更好的了解你的阵容搭配原因"
+    ],
+    "适合硬核玩家撰": [
+      "适合硬核玩家撰写详细攻略内容",
+      "详细攻略不可以转换为快捷攻略"
+    ],
+    "数据每日00:": "数据每日00:00更新",
+    "填写你本次阵容": "填写你本次阵容的标题，来吸引更多用户使用/观看你的攻略",
+    "剩余可引用次数": "剩余可引用次数：3",
+    "第5顺位": "第5顺位",
+    "暂不支持更换，": "暂不支持更换，请等待功能完善后进行更换~",
+    "请先选中具体内": "请先选中具体内容后点击删除",
+    "第15顺位": "第15顺位",
+    "点击\"登录\"": [
+      "点击\"登录\"或\"注册\"即表示您同意我们的服务条款和隐私政策"
+    ],
+    "点击编写时间戳": "点击编写时间戳",
+    "点击此处选择本次阵": "点击此处选择本次阵容所属的地图",
+    "点击英雄头像替": "点击英雄头像替换位置",
+    "请先发布引用内": "请先发布引用内容后继续引用",
+    "一键上传并解析": "一键上传并解析",
+    "装备/神器/上": "装备/神器/上下位资源",
+    "已选英雄：0": "已选英雄：0",
+    "保存长图并分享": "保存长图并分享",
+    "【点击此处设置替": "【点击此处设置替换英雄】",
+    "请先选中要取消": "请先选中要取消收藏的文章后，再次点击~",
+    "点击英雄后，选": "点击英雄后，选择其他英雄或空白位置进行替换",
+    "为了您获得更好": "为了您获得更好的体验，请登录后继续操作",
+    "暂未发布任何内": "暂未发布任何内容，点击下方内容发布吧~",
+    "暂无收藏内容，": "暂无收藏内容，点击下方按钮去查看攻略吧~",
+    "请输入邮箱验证": "请输入邮箱验证码",
+    "请前往游戏内邮": "请前往游戏内邮箱获取验证码",
+    "Tactic": "Tactician",
+    "退出登录": "退出登录",
+    "您还未选择需": "您还未选择需要取消收藏的攻略",
+    "暂无收藏内容，点": "暂无收藏内容，点击下方按钮去查看攻略吧~",
+    "暂无引用内容，点": "暂无引用内容，点击下方按钮去查看攻略吧~",
+    "原作": "原作",
+    "阵型截图": "阵型截图",
+    "上传本次通关阵容的游": "上传本次通关阵容的游戏内截图",
+    "上传本次通关阵容的游戏": "上传本次通关阵容的游戏视频",
+    "填写你本次阵容的": [
+      "填写你本次阵容的标题，来吸引更多用户使用/观看你的攻路"
+    ],
+    "核心通关策略": "核心通关策略",
+    "点击此处选择本次阵容": "点击此处选择本次阵容所属的地图",
+    "非常推荐你填写，": "非常推荐你填写，但这不是必须的",
+    "描述你的核心": [
+      "描述你的核心通关策略，可以帮助玩家更好的了解你的阵容搭配原因"
+    ],
+    "发布攻略类型选择": "发布攻略类型选择",
+    "适合硬核玩家撰写": "适合硬核玩家撰写详细攻略内容",
+    "详细攻略不可以": "详细攻略不可以转换为快捷攻略",
+    "仅需要上传截图与": "仅需要上传截图与较少文字即可发布攻略",
+    "你后期也可以将": "你后期也可以将快捷攻略转换为详细攻略",
+    "站位/截图/": "站位/截图/视频资源",
+    "高台位": "高台位",
+    "地面位": "地面位",
+    "新增图片": "新增图片",
+    "切换视频": "切换视频",
+    "删除视频": "删除视频",
+    "点击上传视频": "点击上传视频",
+    "【点击上方时": "【点击上方时间戳框体即可新增时间戳】",
+    "添加教学时间": "添加教学时间戳",
+    "请输入副本强": "请输入副本强势英雄推荐",
+    "请输入通关详": "请输入通关详细描述",
+    "英雄面板神器": "英雄面板神器页截图",
+    "点击此处选择英": "点击此处选择英雄",
+    "英雄面板装备": "英雄面板装备页截图",
+    "三件套右侧装": "三件套右侧装备",
+    "两件套左侧装": "两件套左侧装备",
+    "点击此处设置": "点击此处设置英雄信息",
+    "顺位": "顺位",
+    "请输入阵容副": "请输入阵容副标题",
+    "发布内容": "发布内容",
+    "快捷设置英雄信息": "快捷设置英雄信息",
+    "点击上下空白": "点击上下空白处关闭",
+    "分享攻略站链": "分享攻略站链接",
+    "重新编辑": "重新编辑",
+    "两件套/左侧装备": "两件套/左侧装备",
+    "三件套/右侧装备": "三件套/右侧装备",
+    "已选装备": "已选装备",
+    "已选神器": "已选神器",
+    "武器胸甲": "武器胸甲",
+    "首饰": "首饰",
+    "最多选择15": "最多选择15个英雄",
+    "时间戳具体时间范": "时间戳具体时间范围",
+    "如 01:2": "如 01:20-06:25等具体时间范围",
+    "如阵容截图/": "如阵容截图/上阵时机/装备截图/神器截图/关键信息/其他信息",
+    "暂无对应分类": "暂无对应分类内容，请点击下方按钮重置~",
+    "暂无发布内容": "暂无发布内容，点击下方内容发布吧",
+    "在上方库或常用中": "在上方库或常用中，点击头像新增你要新增的内容",
+    "暂无对应分类英": "暂无对应分类英雄，请点击下方按钮重置",
+    "已选英雄: ": "已选英雄: ",
+    "输入英雄名称进行": "输入英雄名称进行搜索，支持仅输入单字匹配",
+    "职业": "职业",
+    "功能": "功能",
+    "输出": "输出",
+    "防御": "防御",
+    "未命名": "未命名",
+    "所有": "所有",
+    "为了您的浏览": "为了您的浏览体验，请先登录后查看",
+    "立即登录": "立即登录",
+    "Go!": "Go!",
+    "官方消息": "官方消息",
+    "转化为详细攻": "转化为详细攻略",
+    "链接复制成功": "链接复制成功",
+    "请选择地图": "请选择地图",
+    "请选择英雄": "请选择英雄",
+    "请填写阵容标": "请填写阵容标题",
+    "请上传阵型截": "请上传阵型截图或传通关视频",
+    "阵容标题不能": "阵容标题不能超过15个字",
+    "核心通关策略不": "核心通关策略不能超过500个字",
+    "文件大小不能": "文件大小不能超过{x}MB",
+    "请进入下一步": "请进入下一步后修改视频或图片~",
+    "保存草稿后,": "保存草稿后,在【攻略】页点击+号即可继续撰写本篇文章",
+    "是否确认保存": "是否确认保存草稿？",
+    "您即将退出编": "您即将退出编辑器,是否要保存草稿？",
+    "您目前编写的": "您目前编写的内容将不会被保存",
+    "建议一次性编": "建议一次性编辑完成后，再次页面发布内容",
+    "是否确认退出": "是否确认退出？",
+    "确认删除已选": "确认删除已选中攻略？",
+    "您还未选择需要": "您还未选择需要删除的攻略",
+    "您还未选择需要修": "您还未选择需要修改状态的攻略",
+    "攻略已经是上": "攻略已经是上架状态",
+    "攻略已经是下": "攻略已经是下架状态",
+    "同侧装备只能": "同侧装备只能选择一件",
+    "当前神器选择": "当前神器选择已达上限",
+    "输入装备名称": "输入装备名称进行搜索，支持仅输入单字匹配",
+    "输入神器/英": "输入神器/英雄名称进行搜索，支持仅输入单字匹配",
+    "暂无相关神器": "暂无相关神器搜索内容，请重新搜索",
+    "暂无相关装备": "暂无相关装备搜索内容，请重新搜索",
+    "视频未上传": "视频未上传",
+    "暂未填写": "暂未填写",
+    "暂未选择": "暂未选择",
+    "收藏成功~": "收藏成功~",
+    "请先登录": "请先登录",
+    "不能引用自己": "不能引用自己的攻略",
+    "链接已复制到": "链接已复制到剪切板",
+    "请至少完整的": "请至少完整的填写一个时间戳，或删除全部时间戳",
+    "时间戳标题或": "时间戳标题或者时间戳不能超过字数限制。",
+    "请先输入游戏": "请先输入游戏ID",
+    "请先输入区服": "请先输入区服ID",
+    "发送中...": "发送中...",
+    "验证码发送成": "验证码发送成功",
+    "验证码发送失": "验证码发送失败，请重试",
+    "获取验证码": "获取验证码",
+    "您已有草稿内": "您已有草稿内容，需要继续撰写草稿，",
+    "还是创建新内": "还是创建新内容呢？",
+    "撰写草稿": "撰写草稿",
+    "创建内容": "创建内容",
+    "该难度分类暂": "该难度分类暂无相关地图，",
+    "请点击上方按": "请点击上方按钮切换难度后再试",
+    "丢弃草稿": "丢弃草稿",
+    "请输入修改后的登": "请输入修改后的登录密码",
+    "请输入邮箱验证码": "请输入邮箱验证码",
+    "修改密码成功": "修改密码成功!",
+    "请求中...": "请求中...",
+    "请前往游戏内邮箱": "请前往游戏内邮箱获取验证码",
+    "点击\"修改密": ["点击\"修改密码\"即表示您同意我们的{f}和{b}"],
+    "点击\"登录\"或": ["点击\"登录\"或\"注册\"即表示您同意我们的{f}和{b}"],
+    "服务条款": "服务条款",
+    "隐私政策": "隐私政策",
+    "登录成功!": "登录成功!",
+    "请输入验证码": "请输入验证码",
+    "请先同意协议": "请先同意协议!",
+    "注册并登录成": "注册并登录成功!",
+    "请上传图片": "请上传图片",
+    "举报成功!": "举报成功!",
+    "点击英雄后，选择": "点击英雄后，选择其他英雄或空白位置进行替换"
   },
   "en": {
     "【请先登录】": "Please log in first.",
@@ -220,32 +470,39 @@ export default {
     "登录": "Log In",
     "注册": "Register",
     "用户名": "Username",
-    "请输入用户名": "Please enter your username.",
-    "头像": ["By clicking \"Log in\" or \"Register\", you agree to our Terms of Service and Privacy Policy."],
+    "请输入用户名": "Please enter username.",
+    "头像": [
+      "By clicking \"Log in\" or \"Register\", you agree to our Terms of Service and Privacy Policy."
+    ],
     "密码": "Password",
     "请输入登录密": "Please enter your login password.",
     "注册并登录": "Register And Log In",
     "返回": "Back",
     "请输入修改后": "Please enter the new login password.",
     "修改密码": "Change Password",
-    "游戏ID": "Game User ID",
+    "游戏ID": "Game ID",
     "请输入游戏内": "Please enter your Game User ID.",
     "区服ID": "Server ID",
     "请输入区服I": "Please enter the Server ID.",
     "验证码": "Verification Code",
     "请输入邮箱验": "Please enter the email verification code.",
     "发送": "Send",
-    "请前往游戏内": "Please go to the in-game mailbox to retrieve the verification code.",
+    "请前往游戏内": [
+      "Please go to the in-game mailbox to retrieve the verification code."
+    ],
     "Wiki入口": "Wiki entry button reserved.",
-    "输入英雄/地": "Enter hero/map name to search, partial matches are supported.",
+    "输入英雄/地": [
+      "Enter hero/map name to search, partial matches are supported."
+    ],
     "我拥有的": "My Owned",
-    "在上方库中，": "In the gallery above, click the avatar to add the content you want to add.",
+    "在上方库中，": [
+      "In the gallery above, click the avatar to add the content you want to add."
+    ],
     "请至少选择一": "Please select at least one hero before saving.",
     "攻略": "Guide",
     "助手": "Assistant",
     "我的": "My",
-    " 返回": "Back",
-    "通关精华内容": "Key Content of Stage Completion",
+    "通关精华内容": "Clear Highlights",
     "占位/截图/": "Placeholder/Screenshots/Video Resources",
     "视频教学": "Video Tutorial",
     "核心/必备英": "Core/Essential Heroes",
@@ -254,21 +511,7 @@ export default {
     "输出英雄": "DPS Heroes",
     "防御英雄": "Defensive Heroes",
     "功能英雄": "Utility Heroes",
-    "第1顺位": "Rank 1",
-    "第2顺位": "Rank 2",
-    "第3顺位": "Rank 3",
-    "第4顺位": "Rank 4",
-    "第5顺位": "Rank 5",
-    "第6顺位": "Rank 6",
-    "第7顺位": "Rank 7",
-    "第8顺位": "Rank 8",
-    "第9顺位": "Rank 9",
-    "第10顺位": "Rank 10",
-    "第11顺位": "Rank 11",
-    "第12顺位": "Rank 12",
-    "第13顺位": "Rank 13",
-    "第14顺位": "Rank 14",
-    "第15顺位": "Rank 15",
+    "第{x}顺位": "Position #{x}",
     "朝向向右": "Facing Right",
     "朝向向上": "Facing Up",
     "朝向向左": "Facing Left",
@@ -276,19 +519,19 @@ export default {
     "两件套/左侧": "Two-Piece Set/Left-Side Equipment",
     "三件套/右侧": "Three-Piece Set/Right-Side Equipment",
     "推荐神器": "Recommended Artifacts",
-    "替换神器": "Replace Artifacts",
-    "替换英雄": "Replace Heroes",
-    "图示预览": "Visual Preview",
+    "替换神器": "Replace Artifact",
+    "替换英雄": "Replace Hero",
+    "图示预览": "Image Preview",
     "截图预览": "Screenshot Preview",
     "点赞": "Like",
-    "引用": "Quote",
-    "收藏": "Bookmark",
-    "教学时间戳": "Teaching Timestamp",
+    "引用": "Cite",
+    "收藏": "Favorite",
+    "教学时间戳": "Video Timestamp Tutorial",
     "举报": "Report",
     "举报反馈": "Report Feedback",
     "作者名": "Author Name",
     "攻略标题": "Guide Title",
-    "举报原因": "Reason For Reporting",
+    "举报原因": "Reason for Report",
     "图片证据": "Image Evidence",
     "提交": "Submit",
     "请输入举报原": "Please enter the reason for reporting.",
@@ -296,21 +539,31 @@ export default {
     "请输入攻略标": "Please enter the guide title.",
     "点击任意空白": "Click anywhere to exit",
     "综合": "Comprehensive",
-    "点赞排序": "Like Sorting",
-    "引用排序": "Quote Sorting",
-    "暂无收藏内容": "No bookmarked content. Click the button below to view guides.",
-    "取消收藏": "Cancel Bookmark",
+    "点赞排序": "Sort by Likes",
+    "引用排序": "Sort by Citations",
+    "暂无收藏内容": [
+      "No bookmarked content. Click the button below to view guides."
+    ],
+    "取消收藏": "Remove from Favorites",
     "提示": "Tip",
-    "正在大批量取": "You are about to cancel bookmarks in bulk. Are you sure?",
-    "请先选中要取": "Please select the articles you want to cancel bookmarks for before clicking again.",
-    "暂无引用内容": "No quote content. Click the button below to view guides.",
-    "剩余可引用次": "Remaining quotes: 3",
+    "正在大批量取": [
+      "You are about to cancel bookmarks in bulk. Are you sure?"
+    ],
+    "请先选中要取": [
+      "Please select the articles you want to cancel bookmarks for before clicking again."
+    ],
+    "暂无引用内容": [
+      "No quote content. Click the button below to view guides."
+    ],
+    "剩余可引用次": "Remaining quotes: {x}",
     "前往引用": "Go To Quote",
-    "请先发布引用": "Please publish your quoted content before continuing to quote.",
-    "查看原文": "View Original",
+    "请先发布引用": [
+      "Please publish your quoted content before continuing to quote."
+    ],
+    "查看原文": "View Original Post",
     "继续撰写": "Continue Writing",
-    "被引用": "Quoted",
-    "人点赞": "People Liked",
+    "被引用": "Cited By",
+    "人点赞": "Likes",
     "原作 : ": "Original Work",
     "分享": "Share",
     "攻略数": "Number Of Guides",
@@ -318,18 +571,22 @@ export default {
     "被点赞次数": "Number Of Likes",
     "数据每日00": "Data updates at 00:00 every day.",
     "语言切换": "Switch Language",
-    "批量管理": "Batch Management",
+    "批量管理": "Bulk Manage",
     "引用数量": "Number Of Quotes",
     "点赞数量": "Number Of Likes",
-    "暂未发布任何": "No content has been published yet. Click the button below to publish.",
+    "暂未发布任何": [
+      "No content has been published yet. Click the button below to publish."
+    ],
     "立即前往": "Go Now",
-    "暂不支持更换": "This feature is not supported yet. Please wait for future updates.",
+    "暂不支持更换": [
+      "This feature is not supported yet. Please wait for future updates."
+    ],
     "已发布": "Published",
     "已下架": "Taken Down",
-    "上架": "List",
-    "下架": "Unlist",
+    "上架": "Publish",
+    "下架": "Unpublish",
     "删除": "Delete",
-    "全选": "Select all",
+    "全选": "Select All",
     "退出": "Exit",
     "请先选中具体": "Please select specific content before deleting.",
     "正在删除您发": "You are deleting your published content. Are you sure?",
@@ -338,25 +595,35 @@ export default {
     "审核未通过": "Review Failed",
     "点击任意空白处": "Click anywhere to close.",
     "发布攻略类型": "Select guide type to publish.",
-    "快捷攻略发布": "Quick Guide Publish",
-    "仅需要上传截": "Only need to upload screenshots and a few words to publish the guide. ",
-    "你后期也可以": "You can later convert a quick guide into a detailed one.",
-    "详细攻略发布": "Detailed Guide Publish",
-    "适合硬核玩家": "Suitable for hardcore players to write detailed guides. ",
+    "快捷攻略发布": "Quick Guide",
+    "仅需要上传截": [
+      "Only need to upload screenshots and a few words to publish the guide. "
+    ],
+    "你后期也可以": [
+      "You can later convert a quick guide into a detailed one."
+    ],
+    "详细攻略发布": "Detailed Guide",
+    "适合硬核玩家": [
+      "Suitable for hardcore players to write detailed guides. "
+    ],
     "详细攻略不可": "Detailed guides cannot be converted to quick guides.",
-    "必传内容": "Required Content",
+    "必传内容": "Required Fields",
     "点击此处选择": "Click here to select the map for this team setup.",
     "点击此处选择本": "Click here to select the heroes used in this setup.",
     "主阵型截图": "Main Formation Screenshot",
-    "通关视频": "Stage Completion Video",
+    "通关视频": "Clear Video",
     "上传本次通关": "Upload in-game screenshot of this team setup.",
     "上传本次通关阵": "Upload stage completion video of this team setup.",
-    "填写你本次阵": "Fill in the title of this team setup to attract more users to use/watch your guide.",
+    "填写你本次阵": [
+      "Fill in the title of this team setup to attract more users to use/watch your guide."
+    ],
     "非常推荐你填": "Highly recommended, but not required.",
     "非必填": "Optional",
     "装备页截图": "Equipment Page Screenshot",
     "神器页截图": "Artifact Page Screenshot",
-    "描述你的通关": "Describe your stage completion details to help players better understand your team setup.",
+    "描述你的通关": [
+      "Describe your stage completion details to help players better understand your team setup."
+    ],
     "通关详细描述": "Stage Completion Details",
     "一键上传并解": "One-Click Upload And Analyze",
     "地图选择": "Map Selection",
@@ -366,14 +633,18 @@ export default {
     "战役": "Campaign",
     "进阶难度": "Advanced Difficulty",
     "普通难度": "Normal Difficulty",
-    "输入英雄名称": "Enter hero name to search, partial matches are supported.",
+    "输入英雄名称": [
+      "Enter hero name to search, partial matches are supported."
+    ],
     "搜索": "Search",
     "高台位英雄": "High Ground Heroes",
     "地面位英雄": "Ground Heroes",
-    "星级排序": "Star Ranking",
-    "费用排序": "Cost Ranking",
-    "已选英雄：0": "Selected Heroes: 0",
-    "在上方库或常": "In the gallery above or frequently used, click the avatar to add the content you want to add.",
+    "星级排序": "Sort by Star Level",
+    "费用排序": "Sort by Cost",
+    "已选英雄：{": "Selected Heroes: {x}",
+    "在上方库或常": [
+      "In the gallery above or frequently used, click the avatar to add the content you want to add."
+    ],
     "英雄选择": "Hero Selection",
     "取消": "Cancel",
     "暂无相关搜索": "No related search content, please search again.",
@@ -382,19 +653,25 @@ export default {
     "点击输入英雄": "Click to enter hero recommendation reason.",
     "【点击此处设": "[Click Here To Set Hero Info]",
     "【点击此处设置": "[Click Here To Set Replacement Hero]",
-    "辅助补充信息": "Supplementary Info",
-    "其他信息": "Other Information",
-    "阵容标题": "Team Setup Title",
-    "这里是阵容标": "Here is the team setup title, cannot exceed fifteen characters, click here to start typing.",
+    "辅助补充信息": "Supporting Details",
+    "其他信息": "Other Notes",
+    "阵容标题": "Strategy Title",
+    "这里是阵容标": [
+      "Here is the team setup title, cannot exceed fifteen characters, click here to start typing."
+    ],
     "副标题": "Subtitle",
-    "这里是阵容标题": "Here is the team setup subtitle, cannot exceed fifty characters, click here to start typing.",
+    "这里是阵容标题": [
+      "Here is the team setup subtitle, cannot exceed fifty characters, click here to start typing."
+    ],
     "发布": "Publish",
-    "点击英雄后，": "Click the hero to replace with another hero or blank space.",
+    "点击英雄后，": [
+      "Click the hero to replace with another hero or blank space."
+    ],
     "点击此处替换": "Click here to finish replacing.",
     "装备选择": "Equipment Selection",
     "神器选择": "Artifact Selection",
-    "已选装备：3": "Selected Equipment: 3",
-    "已选神器：0": "Selected Artifacts: 0",
+    "已选装备：{": "Selected Equipment: {x}",
+    "已选神器：{": "Selected Artifacts: {x}",
     "普通": "Normal",
     "全部": "All",
     "已选": "Selected",
@@ -402,85 +679,275 @@ export default {
     "查看大图": "View Large Image",
     "点击编写时间": "Click To Write Timestamp",
     "时间戳标题": "Timestamp Title",
-    "点击此处输入": "Click here to input.",
-    "如  阵容截": " Example: Formation screenshot/Setup timing/Equipment screenshot/Artifact screenshot/Key info/Other info.",
+    "点击此处输入": [
+      "Examples: team screenshots, deployment timing, gear/artifact images, key notes, etc."
+    ],
+    "如  阵容截": [
+      " Example: Formation screenshot/Setup timing/Equipment screenshot/Artifact screenshot/Key info/Other info."
+    ],
     "时间戳": "Timestamp",
     "时间戳具体时": "Specific time range for the timestamp. ",
     "如  01:": "Example: 01:06~03:35, etc.",
-    "这里是核心通": "Here is the core stage completion guide, cannot exceed 500 words, click here to start typing.",
+    "这里是核心通": [
+      "Here is the core stage completion guide, cannot exceed 500 words, click here to start typing."
+    ],
     "保存草稿": "Save Draft",
-    "保存草稿后，": ["After saving the draft, you can continue writing on the 【Guide】 page by clicking the \"+\" icon. Do you confirm saving the draft?"],
-    "您已保存一篇": "You have saved a draft. If you continue saving, it will overwrite the previous draft. Do you confirm to continue?",
+    "保存草稿后，": [
+      "After saving the draft, you can continue writing on the 【Guide】 page by clicking the \"+\" icon. Do you confirm saving the draft?"
+    ],
+    "您已保存一篇": [
+      "You have saved a draft. If you continue saving, it will overwrite the previous draft. Do you confirm to continue?"
+    ],
     "保存长图并分": "Save Long Image And Share",
     "截图描述": "Screenshot Description",
-    "请输入本次截": "Please enter the wave number and other details of this screenshot.",
+    "请输入本次截": [
+      "Please enter the wave number and other details of this screenshot."
+    ],
     "快捷设置英雄": "Quick Set Hero Info",
-    "朝向设置": "Facing Setting",
+    "朝向设置": "Facing Direction",
     "点击设置朝向": "Click to set facing.",
     "上阵顺序": "Setup Order",
     "点击设置上阵": "Click to set setup order.",
-    "不同英雄的朝": "Different heroes may have the same facing, but the order cannot be the same.",
+    "不同英雄的朝": [
+      "Different heroes may have the same facing, but the order cannot be the same."
+    ],
     "点击输入上阵": "Click to input setup order, only numbers ≤ 15.",
-    "保存": "Save"
+    "保存": "Save",
+    "Tactic": "Тактик",
+    "退出登录": "Log Out",
+    "您还未选择需": [
+      "You haven’t selected any strategies to remove from your favorites."
+    ],
+    "暂无收藏内容，": [
+      "No favorites yet. Tap the button below to explore more strategies!"
+    ],
+    "暂无引用内容，": [
+      "No citations yet. Tap the button below to check out strategies to reference!"
+    ],
+    "原作": "Original Author",
+    "阵型截图": "Formation Screenshot",
+    "上传本次通关阵容": "Upload a screenshot of your in-game team setup.",
+    "上传本次通关阵容的": [
+      "Upload your gameplay video showing this team in action."
+    ],
+    "填写你本次阵容": [
+      "Write a catchy title for your setup to attract more players!"
+    ],
+    "核心通关策略": "Core Strategy",
+    "点击此处选择本次": "Select the map where this team was used.",
+    "非常推荐你填写": "(Highly recommended but not required)",
+    "描述你的核心": [
+      "Describe your key strategy—help other players understand how your lineup works!"
+    ],
+    "发布攻略类型选": "Choose a Post Type",
+    "适合硬核玩家撰": "For in-depth writeups aimed at hardcore players.",
+    "详细攻略不可以": [
+      "Note: Detailed guides cannot be converted into quick guides."
+    ],
+    "仅需要上传截图": [
+      "Just upload your screenshots and a short description to publish."
+    ],
+    "你后期也可以将": [
+      "You can later convert it into a detailed guide if you wish."
+    ],
+    "站位/截图/": "Position / Screenshot / Video Resources",
+    "高台位": "Elevated Tile",
+    "地面位": "Ground Tile",
+    "新增图片": "Add Image",
+    "切换视频": "Switch Video",
+    "删除视频": "Delete Video",
+    "点击上传视频": "Click to Upload Video",
+    "【点击上方时": "Click the timestamp box above to add a new timestamp.",
+    "添加教学时间": "Add Teaching Timestamp",
+    "请输入副本强": "Recommended Heroes for this Stage",
+    "请输入通关详": "Detailed Clear Description",
+    "英雄面板神器": "Artifact Page Screenshot",
+    "点击此处选择英": "Click here to select your hero",
+    "英雄面板装备": "Equipment Page Screenshot",
+    "三件套右侧装": "Right-Side (3-Piece Gear)",
+    "两件套左侧装": "Left-Side (2-Piece Gear)",
+    "点击此处设置": "Click here to edit hero info",
+    "顺位": "Position Order",
+    "请输入阵容副": "Enter a subtitle for your team",
+    "发布内容": "Publish",
+    "快捷设置英雄信": "Quick Hero Info Setup",
+    "点击上下空白": "Tap outside to close",
+    "分享攻略站链": "Share Strategy Site Link",
+    "重新编辑": "Edit Again",
+    "两件套/左侧装": "2-Piece / Left-Side Gear",
+    "三件套/右侧装": "3-Piece / Right-Side Gear",
+    "已选装备": "Selected Gear",
+    "已选神器": "Selected Artifacts",
+    "武器胸甲": "Weapon / Armor",
+    "首饰": "Accessories",
+    "最多选择15": "You can select up to 15 heroes.",
+    "时间戳具体时间": "Specific Timestamp Range (e.g., 01:20–06:25)",
+    "如 01:2": "Click here to enter info",
+    "如阵容截图/": [
+      "Examples: team screenshots, deployment timing, gear/artifact images, key notes, etc."
+    ],
+    "暂无对应分类": "No content found in this category. Tap below to reset.",
+    "暂无发布内容": "No posts yet. Tap below to publish your first one!",
+    "在上方库或常用": [
+      "In the library or favorites tab, tap an avatar to add new content."
+    ],
+    "暂无对应分类英": "No heroes found in this category. Tap below to reset.",
+    "已选英雄: ": "Selected Heroes:",
+    "输入英雄名称进": "Search by hero name (supports single-character match)",
+    "职业": "Class",
+    "功能": "Role",
+    "输出": "DPS",
+    "防御": "Tank / Defense",
+    "未命名": "Untitled",
+    "所有": "All",
+    "为了您的浏览": "Please log in to continue browsing.",
+    "立即登录": "Log In Now",
+    "Go!": "Go!",
+    "官方消息": "Official Notice",
+    "转化为详细攻": "Convert to Detailed Guide",
+    "链接复制成功": "Link copied successfully!",
+    "请选择地图": "Please select a map.",
+    "请选择英雄": "Please select a hero.",
+    "请填写阵容标": "Please enter a title.",
+    "请上传阵型截": "Please upload a formation screenshot or clear video.",
+    "阵容标题不能": "Title cannot exceed 15 characters.",
+    "核心通关策略不": "Core strategy cannot exceed 500 characters.",
+    "文件大小不能": "File size cannot exceed {x} MB.",
+    "请进入下一步": "Please edit videos or images in the next step.",
+    "保存草稿后,": [
+      "After saving a draft, tap the + icon on the Strategy page to continue writing later."
+    ],
+    "是否确认保存": "Confirm save draft?",
+    "您即将退出编": [
+      "You are about to exit the editor. Save draft before leaving?"
+    ],
+    "您目前编写的": "Your current progress will not be saved.",
+    "建议一次性编": "We recommend completing your edits before publishing.",
+    "是否确认退出": "Confirm exit?",
+    "确认删除已选": "Confirm deleting selected strategy?",
+    "您还未选择需要": "You haven’t selected any strategies to delete.",
+    "您还未选择需要修": [
+      "You haven’t selected any strategies to change status."
+    ],
+    "攻略已经是上": "The strategy is already published.",
+    "攻略已经是下": "The strategy is already unpublished.",
+    "同侧装备只能": "Only one item per side can be selected.",
+    "当前神器选择": "Artifact selection limit reached.",
+    "输入装备名称": [
+      "Search by equipment name (supports single-character match)."
+    ],
+    "输入神器/英": [
+      "Search by artifact/hero name (supports single-character match)."
+    ],
+    "暂无相关神器": "No matching artifacts found, please try again.",
+    "暂无相关装备": "No matching equipment found, please try again.",
+    "视频未上传": "Video not uploaded.",
+    "暂未填写": "Not filled in.",
+    "暂未选择": "Not selected.",
+    "收藏成功~": "Added to favorites!",
+    "请先登录": "Please log in first.",
+    "不能引用自己": ["You cannot cite your own strategy.", ""],
+    "链接已复制到": "Link copied to clipboard.",
+    "请至少完整的": [
+      "Please complete at least one full timestamp or delete all timestamps."
+    ],
+    "时间戳标题或": "Timestamp title or range exceeds the character limit.",
+    "请先输入游戏": "Please enter Game ID.",
+    "请先输入区服": "Please enter Server ID.",
+    "发送中...": "Sending...",
+    "验证码发送成": "Verification code sent successfully!",
+    "验证码发送失": "Failed to send verification code. Please try again.",
+    "获取验证码": "Get Code",
+    "您已有草稿内": "You already have a draft saved.",
+    "还是创建新内": [
+      "Would you like to continue editing it, or start a new one?"
+    ],
+    "撰写草稿": "Continue Draft",
+    "创建内容": "Create New",
+    "该难度分类暂": "No maps found under this difficulty.",
+    "请点击上方按": "Try switching difficulty and check again.",
+    "丢弃草稿": "Discard Draft",
+    "请输入修改后的": "Please enter new password.",
+    "请输入区服ID": "Please enter Server ID.",
+    "请输入游戏内I": "Please enter in-game ID.",
+    "请输入邮箱验证": "Please enter email verification code.",
+    "修改密码成功": "Password updated successfully!",
+    "请求中...": "Requesting...",
+    "请前往游戏内邮": "Check your in-game mailbox for the verification code.",
+    "点击\"修改密": [
+      "By clicking Change Password, you agree to our {f} and {b}."
+    ],
+    "点击\"登录\"": [
+      "By clicking Log In or Register, you agree to our {f} and {b}."
+    ],
+    "服务条款": "Terms of Service",
+    "隐私政策": "Privacy Policy",
+    "登录成功!": "Login Successful!",
+    "请输入验证码": "Please enter the verification code.",
+    "请先同意协议": "Please agree to the terms first!",
+    "注册并登录成": "Registration Successful!",
+    "请输入举报原因": "Please enter reason for report.",
+    "请上传图片": "Please upload image.",
+    "举报成功!": "Report Submitted!",
+    "点击英雄后，选": [
+      "After selecting a hero, tap another hero or an empty slot to replace the current one."
+    ]
   },
   "ru": {
     "【请先登录】": "Пожалуйста, сначала войдите в систему.",
-    "为了您获得更": "Для более удобного использования войдите в систему, чтобы продолжить.",
+    "为了您获得更": [
+      "Для более удобного использования войдите в систему, чтобы продолжить."
+    ],
     "请输入密码": "Пожалуйста, введите ваш пароль.",
     "注册账户": "Зарегистрировать учетную запись",
     "忘记密码": "Забыли пароль",
     "登录": "Авторизоваться",
     "注册": "Зарегистрироваться",
     "用户名": "Имя пользователя",
-    "请输入用户名": "Пожалуйста, введите ваше имя пользователя.",
-    "头像": "Нажимая «Войти» или «Зарегистрироваться», вы соглашаетесь с нашими Условиями обслуживания и Политикой конфиденциальности.",
+    "请输入用户名": "Пожалуйста, введите имя пользователя.",
+    "头像": [
+      "Нажимая «Войти» или «Зарегистрироваться», вы соглашаетесь с нашими Условиями обслуживания и Политикой конфиденциальности."
+    ],
     "密码": "Пароль",
     "请输入登录密": "Введите ваш пароль для входа.",
     "注册并登录": "Зарегистрируйтесь и войдите в систему",
-    "返回": "Назад",
+    "返回": "Вернуться",
     "请输入修改后": "Введите новый пароль для входа.",
     "修改密码": "Изменить пароль",
-    "游戏ID": "ID пользователя",
+    "游戏ID": "Игровой ID",
     "请输入游戏内": "Введите свой ID пользователя.",
-    "区服ID": "ID сервера",
+    "区服ID": "Сервер ID",
     "请输入区服I": "Введите ID сервера.",
     "验证码": "Проверочный код",
-    "请输入邮箱验": "Введите код подтверждения направленный на адрес электронной почты.",
+    "请输入邮箱验": [
+      "Введите код подтверждения направленный на адрес электронной почты."
+    ],
     "发送": "Отправить",
-    "请前往游戏内": "Пожалуйста, перейдите на внутриигровой почтовый ящик, чтобы получить проверочный код.",
+    "请前往游戏内": [
+      "Пожалуйста, перейдите на внутриигровой почтовый ящик, чтобы получить проверочный код."
+    ],
     "Wiki入口": "Кнопка для перехода к статье в Википедии зарезервирована.",
-    "输入英雄/地": "Введите имя героя или название карты для поиска, поддерживаются частичные совпадения.",
+    "输入英雄/地": [
+      "Введите имя героя или название карты для поиска, поддерживаются частичные совпадения."
+    ],
     "我拥有的": "Мои сохраненные",
-    "在上方库中，": "В галерее выше нажмите на аватар, чтобы добавить нужный вам контент.",
+    "在上方库中，": [
+      "В галерее выше нажмите на аватар, чтобы добавить нужный вам контент."
+    ],
     "请至少选择一": "Перед сохранением выберите хотя бы одного героя.",
     "攻略": "Руководство",
     "助手": "Помощник",
     "我的": "Мой",
-    " 返回": "Назад",
-    "通关精华内容": "Ключевое содержание завершения этапа",
+    "通关精华内容": "Очистить выделение",
     "占位/截图/": "Шаблон/Скриншоты/Видеоресурсы",
-    "视频教学": "Видео руководство",
+    "视频教学": "Видео обучение",
     "核心/必备英": "Основные/обязательные герои",
     "副本强势英雄": "Рекомендуемые сильные герои для этапов",
     "装备/神器/": "Снаряжение/Артефакты/Ресурсы для улучшения",
     "输出英雄": "Герои атаки",
     "防御英雄": "Герои защиты",
     "功能英雄": "Универсальные герои",
-    "第1顺位": "Ранг 1",
-    "第2顺位": "Ранг 2",
-    "第3顺位": "Ранг 3",
-    "第4顺位": "Ранг 4",
-    "第5顺位": "Ранг 5",
-    "第6顺位": "Ранг 6",
-    "第7顺位": "Ранг 7",
-    "第8顺位": "Ранг 8",
-    "第9顺位": "Ранг 9",
-    "第10顺位": "Ранг 10",
-    "第11顺位": "Ранг 11",
-    "第12顺位": "Ранг 12",
-    "第13顺位": "Ранг 13",
-    "第14顺位": "Ранг 14",
-    "第15顺位": "Ранг 15",
+    "第{x}顺位": "Позиция #{x}",
     "朝向向右": "Лицом направо",
     "朝向向上": "Лицом вверх",
     "朝向向左": "Лицом влево",
@@ -488,19 +955,19 @@ export default {
     "两件套/左侧": "Комплект из двух предметов/Снаряжение слева",
     "三件套/右侧": "Комплект из трех предметов/Снаряжение справа",
     "推荐神器": "Рекомендуемые артефакты",
-    "替换神器": "Подходящие артефакты",
-    "替换英雄": "Подходящие герои",
-    "图示预览": "Просмотр",
+    "替换神器": "Заменить артефакт",
+    "替换英雄": "Заменить героя",
+    "图示预览": "Предварительный просмотр изображения",
     "截图预览": "Предварительный просмотр скриншота",
-    "点赞": "Нравится",
-    "引用": "Цитировать",
-    "收藏": "Добавить в закладки",
-    "教学时间戳": "Метка времени прохождения",
-    "举报": "Отчет",
-    "举报反馈": "Сообщить об ошибке",
+    "点赞": "Мне нравиться",
+    "引用": "Комментировать",
+    "收藏": "Избранное",
+    "教学时间戳": "Видеоруководство по временным меткам",
+    "举报": "Пожаловаться",
+    "举报反馈": "Ответ по жалобе",
     "作者名": "Имя автора",
     "攻略标题": "Название руководства",
-    "举报原因": "Причина сообщения",
+    "举报原因": "Причина жалобы",
     "图片证据": "Изображение доказательства",
     "提交": "Отправить на рассмотрение",
     "请输入举报原": "Пожалуйста, укажите причину сообщения.",
@@ -509,20 +976,28 @@ export default {
     "点击任意空白": "Нажмите в любом месте, чтобы выйти",
     "综合": "Подробный",
     "点赞排序": "Сортировать по лайкам",
-    "引用排序": "Сортировать по цитированию",
-    "暂无收藏内容": "Нет закладок. Нажмите кнопку ниже, чтобы просмотреть руководства.",
-    "取消收藏": "Отменить закладку",
+    "引用排序": "Сортировать по комментариям",
+    "暂无收藏内容": [
+      "Нет закладок. Нажмите кнопку ниже, чтобы просмотреть руководства."
+    ],
+    "取消收藏": "Удалить из избранного",
     "提示": "Подсказка",
     "正在大批量取": "Вы собираетесь массово удалить закладки. Вы уверены?",
-    "请先选中要取": "Прежде чем нажать еще раз, выберите закладки которых вы хотите отменить.",
-    "暂无引用内容": "Цитата отсутствует. Нажмите кнопку ниже, чтобы просмотреть руководства.",
-    "剩余可引用次": "Осталось цитат: 3",
+    "请先选中要取": [
+      "Прежде чем нажать еще раз, выберите закладки которых вы хотите отменить."
+    ],
+    "暂无引用内容": [
+      "Цитата отсутствует. Нажмите кнопку ниже, чтобы просмотреть руководства."
+    ],
+    "剩余可引用次": "Осталось цитат: {x}",
     "前往引用": "Перейти к цитате",
-    "请先发布引用": "Пожалуйста, опубликуйте цитируемый вами текст, прежде чем продолжить цитирование.",
-    "查看原文": "Посмотреть оригинал",
-    "继续撰写": "Продолжить писать",
-    "被引用": "Цитируется",
-    "人点赞": "Понравилось пользователям",
+    "请先发布引用": [
+      "Пожалуйста, опубликуйте цитируемый вами текст, прежде чем продолжить цитирование."
+    ],
+    "查看原文": "Посмотреть исходный пост",
+    "继续撰写": "Продолжить сообщение",
+    "被引用": "Комментировать",
+    "人点赞": "Лайки",
     "原作 : ": "Оригинальная работа",
     "分享": "Поделиться",
     "攻略数": "Количество руководств",
@@ -530,16 +1005,20 @@ export default {
     "被点赞次数": "Количество лайков",
     "数据每日00": "Данные обновляются каждый день в 00:00.",
     "语言切换": "Переключить язык",
-    "批量管理": "Управление стеком",
+    "批量管理": "Массовое управление",
     "引用数量": "Количество цитат",
     "点赞数量": "Количество лайков",
-    "暂未发布任何": "Контент пока не опубликован. Нажмите кнопку ниже, чтобы опубликовать.",
+    "暂未发布任何": [
+      "Контент пока не опубликован. Нажмите кнопку ниже, чтобы опубликовать."
+    ],
     "立即前往": "Перейти сейчас",
-    "暂不支持更换": "Эта функция пока не поддерживается. Пожалуйста, дождитесь будущих обновлений.",
+    "暂不支持更换": [
+      "Эта функция пока не поддерживается. Пожалуйста, дождитесь будущих обновлений."
+    ],
     "已发布": "Опубликовано",
     "已下架": "Снято с публикации",
-    "上架": "Список",
-    "下架": "Удалить из списка",
+    "上架": "Публиковать",
+    "下架": "Отменить публикацию",
     "删除": "Удалить",
     "全选": "Выбрать все",
     "退出": "Выход",
@@ -550,25 +1029,41 @@ export default {
     "审核未通过": "Проверка не пройдена",
     "点击任意空白处": "Нажмите в любом месте, чтобы закрыть.",
     "发布攻略类型": "Выберите тип руководства для публикации.",
-    "快捷攻略发布": "Опубликовать Краткое руководство",
-    "仅需要上传截": "Для публикации руководства достаточно загрузить скриншоты и написать несколько слов.",
-    "你后期也可以": " Позже вы сможете преобразовать краткое руководство в подробное.",
-    "详细攻略发布": "Опубликовать Подробное руководство",
-    "适合硬核玩家": "Подходит для хардкорных игроков, желающих написать подробные руководства. ",
+    "快捷攻略发布": "Краткое руководство",
+    "仅需要上传截": [
+      "Для публикации руководства достаточно загрузить скриншоты и написать несколько слов."
+    ],
+    "你后期也可以": [
+      " Позже вы сможете преобразовать краткое руководство в подробное."
+    ],
+    "详细攻略发布": "Подробное руководство",
+    "适合硬核玩家": [
+      "Подходит для хардкорных игроков, желающих написать подробные руководства. "
+    ],
     "详细攻略不可": "Подробные руководства нельзя преобразовать в краткие.",
-    "必传内容": "Обязательное содержание",
-    "点击此处选择": "Нажмите здесь, чтобы выбрать карту для данной конфигурации команды.",
-    "点击此处选择本": "Нажмите здесь, чтобы выбрать героев, используемых в этой настройке.",
+    "必传内容": "Обязательные поля",
+    "点击此处选择": [
+      "Нажмите здесь, чтобы выбрать карту для данной конфигурации команды."
+    ],
+    "点击此处选择本": [
+      "Нажмите здесь, чтобы выбрать героев, используемых в этой настройке."
+    ],
     "主阵型截图": "Скриншот основного построения",
-    "通关视频": "Видео завершения этапа",
+    "通关视频": "Видео прохождения",
     "上传本次通关": "Загрузите игровой скриншот с расстановкой этой команды.",
-    "上传本次通关阵": "Загрузите видеозапись завершения этапа настройки этой команды.",
-    "填写你本次阵": "Заполните заголовок этой настройки команды, чтобы привлечь больше пользователей к использованию/просмотру вашего руководства.",
+    "上传本次通关阵": [
+      "Загрузите видеозапись завершения этапа настройки этой команды."
+    ],
+    "填写你本次阵": [
+      "Заполните заголовок этой настройки команды, чтобы привлечь больше пользователей к использованию/просмотру вашего руководства."
+    ],
     "非常推荐你填": "Настоятельно рекомендуется, но не обязательно.",
-    "非必填": "Необязательно",
+    "非必填": "Дополнительно",
     "装备页截图": "Скриншот страницы снаряжения",
     "神器页截图": "Скриншот страницы артефакта",
-    "描述你的通关": "Опишите детали завершения этапа, чтобы помочь игрокам лучше понять состав вашей команды.",
+    "描述你的通关": [
+      "Опишите детали завершения этапа, чтобы помочь игрокам лучше понять состав вашей команды."
+    ],
     "通关详细描述": "Подробности завершения этапа",
     "一键上传并解": "Загрузка и анализ в один клик",
     "地图选择": "Выбор карты",
@@ -576,211 +1071,498 @@ export default {
     "竞技场": "Арена",
     "副本": "Рейд",
     "战役": "Кампания",
-    "进阶难度": "Продвинутый уровень сложности",
-    "普通难度": "Нормальная сложность",
-    "输入英雄名称": "Введите имя героя для поиска, поддерживаются частичные совпадения.",
+    "进阶难度": "Продвинутая сложность",
+    "普通难度": "Обычная сложность",
+    "输入英雄名称": [
+      "Введите имя героя для поиска, поддерживаются частичные совпадения."
+    ],
     "搜索": "Поиск",
     "高台位英雄": "Герои на возвышенности",
     "地面位英雄": "Наземные герои",
-    "星级排序": "Рейтинг звезд",
-    "费用排序": "Рейтинг стоимости",
-    "已选英雄：0": "Выбранные герои: 0",
-    "在上方库或常": "В галерее выше или в часто используемой галерее нажмите на аватар, чтобы добавить нужный вам контент.",
+    "星级排序": "Сортировать по уровню звезд",
+    "费用排序": "Сортировать по стоимости",
+    "已选英雄：{": "Выбранные герои: {x}",
+    "在上方库或常": [
+      "В галерее выше или в часто используемой галерее нажмите на аватар, чтобы добавить нужный вам контент."
+    ],
     "英雄选择": "Выбор героя",
     "取消": "Отмена",
-    "暂无相关搜索": "Нет соответствующего поискового контента, пожалуйста, повторите поиск.",
+    "暂无相关搜索": [
+      "Нет соответствующего поискового контента, пожалуйста, повторите поиск."
+    ],
     "点击此处重置": "Нажмите здесь для сброса.",
     "点击英雄头像": "Нажмите на аватар героя, чтобы сменить позицию.",
     "点击输入英雄": "Нажмите, чтобы ввести причину рекомендации героя.",
     "【点击此处设": "[Нажмите здесь, чтобы установить информацию о герое]",
     "【点击此处设置": "[Нажмите здесь, чтобы установить заменяющего героя]",
-    "辅助补充信息": "Дополнительная информация",
-    "其他信息": "Другая информация",
-    "阵容标题": "Название настройки команды",
-    "这里是阵容标": "Введите название настройки команды, оно не может превышать пятнадцати символов, нажмите здесь, чтобы начать вводить текст.",
+    "辅助补充信息": "Дополнительные сведения",
+    "其他信息": "Другие заметки",
+    "阵容标题": "Название руководства",
+    "这里是阵容标": [
+      "Введите название настройки команды, оно не может превышать пятнадцати символов, нажмите здесь, чтобы начать вводить текст."
+    ],
     "副标题": "Подзаголовок",
-    "这里是阵容标题": "Ввведите подзаголовок настройки команды, длина не может превышать пятидесяти символов. Нажмите здесь, чтобы начать ввод.",
+    "这里是阵容标题": [
+      "Ввведите подзаголовок настройки команды, длина не может превышать пятидесяти символов. Нажмите здесь, чтобы начать ввод."
+    ],
     "发布": "Опубликовать",
-    "点击英雄后，": "Нажмите на героя, чтобы заменить его другим героем или пустым местом.",
+    "点击英雄后，": [
+      "Нажмите на героя, чтобы заменить его другим героем или пустым местом."
+    ],
     "点击此处替换": "Нажмите здесь, чтобы завершить замену.",
     "装备选择": "Выбор снаряжения",
     "神器选择": "Выбор артефакта",
-    "已选装备：3": "Выбранное снаряжения: 3",
-    "已选神器：0": "Выбранные артефакты: 0",
+    "已选装备：{": "Выбранное снаряжения: {x}",
+    "已选神器：{": "Выбранные артефакты: {x}",
     "普通": "Обычно",
     "全部": "Все",
-    "已选": "Выбранный",
+    "已选": "Выбранные",
     "切换图片": "Изменить изображение",
     "查看大图": "Просмотреть большое изображение",
     "点击编写时间": "Нажмите, чтобы записать временную метку",
     "时间戳标题": "Название метки времени",
-    "点击此处输入": "Нажмите здесь, чтобы ввести данные. ",
-    "如  阵容截": "Пример: Скриншот построения/Время настройки/Скриншот снаряжения/Скриншот артефакта/Ключевая информация/Другая информация.",
+    "点击此处输入": [
+      "Примеры: скриншоты команды, время размещения, изображения снаряжения/артефактов, ключевые заметки и т. д."
+    ],
+    "如  阵容截": [
+      "Пример: Скриншот построения/Время настройки/Скриншот снаряжения/Скриншот артефакта/Ключевая информация/Другая информация."
+    ],
     "时间戳": "Метка времени",
     "时间戳具体时": "Укажите временной диапазон для метки. ",
     "如  01:": "Например: 01:06–03:35 и т. д.",
-    "这里是核心通": "Введите описание руководства по завершению основного этапа, оно не должно превышать 500 слов. Нажмите здесь, чтобы начать ввод.",
+    "这里是核心通": [
+      "Введите описание руководства по завершению основного этапа, оно не должно превышать 500 слов. Нажмите здесь, чтобы начать ввод."
+    ],
     "保存草稿": "Сохранить черновик",
-    "保存草稿后，": "После сохранения черновика вы можете продолжить писать на странице 【Руководство】, нажав на значок «+». Вы подтверждаете сохранение черновика?",
-    "您已保存一篇": "Вы сохранили черновик. Если вы продолжите сохранение, он перезапишет предыдущий черновик. Вы подтверждаете продолжение?",
+    "保存草稿后，": [
+      "После сохранения черновика вы можете продолжить писать на странице 【Руководство】, нажав на значок «+». Вы подтверждаете сохранение черновика?"
+    ],
+    "您已保存一篇": [
+      "Вы сохранили черновик. Если вы продолжите сохранение, он перезапишет предыдущий черновик. Вы подтверждаете продолжение?"
+    ],
     "保存长图并分": "Сохранить большое изображение и поделиться.",
     "截图描述": "Описание скриншота",
     "请输入本次截": "Введите номер волны и другие данные этого скриншота.",
     "快捷设置英雄": "Быстрая настройка информации о герое",
-    "朝向设置": "Настройка направдения",
+    "朝向设置": "Направление движения",
     "点击设置朝向": "Нажмите, чтобы установить направление.",
     "上阵顺序": "Порядок настройки",
     "点击设置上阵": "Нажмите, чтобы задать порядок настройки.",
-    "不同英雄的朝": "У разных героев может быть одинаковая внешность, но порядок не может быть одинаковым.",
-    "点击输入上阵": "Нажмите, чтобы ввести порядок настройки. Допускаются только числа ≤ 15.",
-    "保存": "Сохранить."
+    "不同英雄的朝": [
+      "У разных героев может быть одинаковая внешность, но порядок не может быть одинаковым."
+    ],
+    "点击输入上阵": [
+      "Нажмите, чтобы ввести порядок настройки. Допускаются только числа ≤ 15."
+    ],
+    "保存": "Сохранить.",
+    "Tactic": "Tacticien",
+    "退出登录": "Выйти",
+    "您还未选择需": [
+      "Вы не выбрали ни одного руководства для удаления из избранного."
+    ],
+    "暂无收藏内容，": [
+      "Нет избранных. Нажмите кнопку ниже, чтобы узнать больше руководств!"
+    ],
+    "暂无引用内容，": [
+      "Нет комментариев. Нажмите кнопку ниже, чтобы ознакомиться с руководствами, которые можно комментировать!"
+    ],
+    "原作": "Автор оригинала",
+    "阵型截图": "Скриншот расстановки",
+    "上传本次通关阵容": [
+      "Загрузите снимок экрана с настройками вашей команды."
+    ],
+    "上传本次通关阵容的": [
+      "Загрузите видео вашего игрового процесса, демонстрирующее эту команду в действии."
+    ],
+    "填写你本次阵容": [
+      "Придумайте цепляющее название для своего руководства, чтобы привлечь больше игроков!"
+    ],
+    "核心通关策略": "Основное руководство",
+    "点击此处选择本次": "Выберите карту, где использовалась эта команда.",
+    "非常推荐你填写": "(Настоятельно рекомендуется, но не обязательно)",
+    "描述你的核心": [
+      "Опишите ключевые моменты вашего руководства — помогите другим игрокам понять, как работает ваш состав!"
+    ],
+    "发布攻略类型选": "Выберите тип сообщения",
+    "适合硬核玩家撰": [
+      "Для подробных статей, ориентированных на игроков высокого класса."
+    ],
+    "详细攻略不可以": [
+      "Примечание: Подробные руководства нельзя преобразовать в краткие руководства."
+    ],
+    "仅需要上传截图": [
+      "Просто загрузите скриншоты и краткое описание для публикации."
+    ],
+    "你后期也可以将": [
+      "При желании вы сможете впоследствии преобразовать его в подробное руководство."
+    ],
+    "站位/截图/": "Позиция / Скриншот / Видеоресурсы",
+    "高台位": "Плитка на возвышенности",
+    "地面位": "Плитка на земле",
+    "新增图片": "Добавить изображение",
+    "切换视频": "Сменить видео",
+    "删除视频": "Добавить видео",
+    "点击上传视频": "Нажмите, чтобы загрузить видео",
+    "【点击上方时": [
+      "Нажмите поле метки времени выше, чтобы добавить новую метку времени."
+    ],
+    "添加教学时间": "Добавить временную метку обучения",
+    "请输入副本强": "Рекомендуемые герои для этого этапа",
+    "请输入通关详": "Подробное описание прохождения",
+    "英雄面板神器": "Скриншот страницы артефакта",
+    "点击此处选择英": "Нажмите здесь, чтобы выбрать своего героя",
+    "英雄面板装备": "Скриншот страницы снаряжения",
+    "三件套右侧装": "Правая сторона (комплект из 3 предметов)",
+    "两件套左侧装": "Левая сторона (комплект из 2 предметов)",
+    "点击此处设置": "Нажмите здесь, чтобы изменить информацию о герое.",
+    "顺位": "Порядок размещения",
+    "请输入阵容副": "Введите подзаголовок для вашей команды",
+    "发布内容": "Публиковать",
+    "快捷设置英雄信": "Быстрая настройка информации о герое",
+    "点击上下空白": "Нажмите снаружи, чтобы закрыть",
+    "分享攻略站链": "Поделиться ссылкой на сайт с руководством",
+    "重新编辑": "Редактировать",
+    "两件套/左侧装": "2 позиции / снаряжение слева",
+    "三件套/右侧装": "3 позиции / снаряжение справа",
+    "已选装备": "Выбранное снаряжение",
+    "已选神器": "Выбранные артефакты",
+    "武器胸甲": "Оружие / Нагрудник",
+    "首饰": "Аксессуары",
+    "最多选择15": "Вы можете выбрать до 15 героев.",
+    "时间戳具体时间": [
+      "Конкретный диапазон временных меток (например, 01:20–06:25)"
+    ],
+    "如 01:2": "Нажмите здесь, чтобы добавить информацию",
+    "如阵容截图/": [
+      "Примеры: скриншоты команды, время размещения, изображения снаряжения/артефактов, ключевые заметки и т. д."
+    ],
+    "暂无对应分类": [
+      "В этой категории ничего не найдено. Нажмите ниже, чтобы сбросить настройки."
+    ],
+    "暂无发布内容": [
+      "Пока нет публикаций — Нажмите ниже, чтобы опубликовать первую!"
+    ],
+    "在上方库或常用": [
+      "На вкладке «Библиотека» или «Избранное» нажмите на аватар, чтобы добавить новый контент."
+    ],
+    "暂无对应分类英": [
+      "Героев в этой категории не найдено. Нажмите ниже, чтобы сбросить настройки."
+    ],
+    "已选英雄: ": "Выбранные герои:",
+    "输入英雄名称进": [
+      "Поиск по имени героя (поддерживает поиск по одному символу)"
+    ],
+    "职业": "Класс",
+    "功能": "Роль",
+    "输出": "Наносящий УРН",
+    "防御": "Танк / Защита",
+    "未命名": "Без названия",
+    "所有": "Все",
+    "为了您的浏览": [
+      "Пожалуйста, войдите в систему, чтобы продолжить просмотр."
+    ],
+    "立即登录": "Войти сейчас",
+    "Go!": "Войти!",
+    "官方消息": "Официальное уведомление",
+    "转化为详细攻": "Преобразовать в подробное руководство",
+    "链接复制成功": "Ссылка успешно скопирована!",
+    "请选择地图": "Пожалуйста, выберите карту.",
+    "请选择英雄": "Пожалуйста, выберите героя.",
+    "请填写阵容标": "Пожалуйста, введите заголовок.",
+    "请上传阵型截": [
+      "Пожалуйста, загрузите скриншот расстановки или видео прохождения."
+    ],
+    "阵容标题不能": "Заголовок не может превышать 15 символов.",
+    "核心通关策略不": "Описание руководства не может превышать 500 символов.",
+    "文件大小不能": "Размер файла не может превышать {x} МБ.",
+    "请进入下一步": [
+      "Пожалуйста, отредактируйте видео или изображения на следующем шаге."
+    ],
+    "保存草稿后,": [
+      "После сохранения черновика нажмите значок + на странице «Руководства», чтобы продолжить написание позже."
+    ],
+    "是否确认保存": "Подтвердить сохранение черновика?",
+    "您即将退出编": [
+      "Вы собираетесь выйти из редактора. Сохранить черновик перед выходом?"
+    ],
+    "您目前编写的": "Ваш текущий прогресс не будет сохранен.",
+    "建议一次性编": "Рекомендуем завершить редактирование перед публикацией.",
+    "是否确认退出": "Подтвердить выход?",
+    "确认删除已选": "Подтвердить удаление выбранного руководства?",
+    "您还未选择需要": "Вы не выбрали ни одного руководства для удаления.",
+    "您还未选择需要修": [
+      "Вы не выбрали ни одного руководства для изменения статуса."
+    ],
+    "攻略已经是上": "Руководство уже опубликовано.",
+    "攻略已经是下": "Руководство еще не опубликовано.",
+    "同侧装备只能": "Можно выбрать только один элемент с каждой стороны.",
+    "当前神器选择": "Достигнут лимит выбора артефактов.",
+    "输入装备名称": [
+      "Поиск по названию снаряжения (поддерживается поиск по одному символу)."
+    ],
+    "输入神器/英": [
+      "Поиск по названию артефакта/героя (поддерживается поиск по одному символу)."
+    ],
+    "暂无相关神器": "Подходящие артефакты не найдены, попробуйте еще раз.",
+    "暂无相关装备": "Подходящее снаряжение не найдено, попробуйте еще раз.",
+    "视频未上传": "Видео не загружено.",
+    "暂未填写": "Не заполнено.",
+    "暂未选择": "Не выбрано.",
+    "收藏成功~": "Добавлено в избранное!",
+    "请先登录": "Пожалуйста, сначала войдите в систему.",
+    "不能引用自己": [
+      "Вы не можете комментировать свое собственное руководство."
+    ],
+    "链接已复制到": "Ссылка скопирована в буфер обмена.",
+    "请至少完整的": [
+      "Пожалуйста, заполните хотя бы одну временную метку или удалите все временные метки."
+    ],
+    "时间戳标题或": [
+      "Название временной метки превышает ограничение по количеству символов."
+    ],
+    "请先输入游戏": "Пожалуйста, введите игровой ID.",
+    "请先输入区服": "Пожалуйста, введите ID сервера.",
+    "发送中...": "Отправка...",
+    "验证码发送成": "Код подтверждения успешно отправлен!",
+    "验证码发送失": [
+      "Не удалось отправить код подтверждения. Попробуйте еще раз."
+    ],
+    "获取验证码": "Получить код",
+    "您已有草稿内": "У вас уже есть сохраненный черновик.",
+    "还是创建新内": [
+      "Хотите ли вы продолжить редактирование или начать новое?"
+    ],
+    "撰写草稿": "Продолжить черновик",
+    "创建内容": "Создать новый",
+    "该难度分类暂": "Карт с этим уровнем сложности не найдено.",
+    "请点击上方按": [
+      "Попробуйте изменить уровень сложности и проверьте еще раз."
+    ],
+    "丢弃草稿": "Отменить черновик",
+    "请输入修改后的": "Пожалуйста, введите новый пароль.",
+    "请输入区服ID": "Пожалуйста, введите ID сервера.",
+    "请输入游戏内I": "Пожалуйста, введите игровой ID.",
+    "请输入邮箱验证": [
+      "Пожалуйста, введите код подтверждения адреса электронной почты."
+    ],
+    "修改密码成功": "Пароль успешно обновлен!",
+    "请求中...": "Запрос...",
+    "请前往游戏内邮": [
+      "Проверьте свой внутриигровой почтовый ящик на наличие проверочного кода."
+    ],
+    "点击\"修改密": [
+      "Нажимая «Изменить пароль», вы соглашаетесь с нашими {f} и {b}."
+    ],
+    "点击\"登录\"": [
+      "Нажимая «Войти» или «Зарегистрироваться», вы соглашаетесь с нашими {f} и {b}."
+    ],
+    "服务条款": "Условия использования",
+    "隐私政策": "Политика конфиденциальности",
+    "登录成功!": "Вход выполнен успешно!",
+    "请输入验证码": "Пожалуйста, введите проверочный код.",
+    "请先同意协议": "Пожалуйста, сначала согласитесь с условиями!",
+    "注册并登录成": "Регистрация прошла успешно!",
+    "请输入举报原因": "Пожалуйста, укажите причину жалобы.",
+    "请上传图片": "Пожалуйста, загрузите изображение.",
+    "举报成功!": "Жалоба отправлена!",
+    "点击英雄后，选": [
+      "После выбора героя нажмите на другого героя или на пустую ячейку, чтобы заменить текущего."
+    ]
   },
   "fr": {
     "【请先登录】": "Bitte logge dich erst ein.",
-    "为了您获得更": "Für eine bessere Erfahrung, logge dich bitte ein, um fortzufahren.",
+    "为了您获得更": [
+      "Für eine bessere Erfahrung, logge dich bitte ein, um fortzufahren."
+    ],
     "请输入密码": "Bitte gib dein Passwort ein.",
     "注册账户": "Registriere einen Account",
     "忘记密码": "Passwort vergessen",
     "登录": "Einloggen",
     "注册": "Registrieren",
-    "用户名": "Username",
-    "请输入用户名": "Bitte gebe deinen Usernamen ein.",
-    "头像": ["Durch das Klicken von \"Einloggen\" oder \"Registrieren stimmst du", "unseren Nutzungsbedingungen und Datenschutzrichtlinien zu."],
-    "密码": "Passwort",
+    "用户名": "Nom d'utilisateur",
+    "请输入用户名": "Veuillez saisir votre nom d'utilisateur.",
+    "头像": [
+      "Durch das Klicken von \"Einloggen\" oder \"Registrieren stimmst du",
+      "unseren Nutzungsbedingungen und Datenschutzrichtlinien zu."
+    ],
+    "密码": "Mot de passe",
     "请输入登录密": "Bitte gib dein Login Passwort ein.",
     "注册并登录": "Registrieren und Einloggen",
-    "返回": "Zurück",
+    "返回": "Retour",
     "请输入修改后": "Bitte gib das neue Login Passwort ein.",
-    "修改密码": "Passwort Ändern",
-    "游戏ID": "Game User ID",
+    "修改密码": "Changer le mot de passe",
+    "游戏ID": "ID de jeu",
     "请输入游戏内": "Bitte gib deine Game User ID ein.",
-    "区服ID": "Server ID",
+    "区服ID": "ID du serveur",
     "请输入区服I": "Bitte gib deine Server ID ein.",
     "验证码": "Bestätigungscode",
     "请输入邮箱验": "Bitte gib deinen Bestätigungscode ein.",
     "发送": "Senden",
-    "请前往游戏内": ["Bitte geh in dein in-game Postfach, ", "um den Bestätigungscode abzurufen."],
+    "请前往游戏内": [
+      "Bitte geh in dein in-game Postfach, ",
+      "um den Bestätigungscode abzurufen."
+    ],
     "Wiki入口": "Wiki-Eingabe-Button reserviert.",
-    "输入英雄/地": ["Gebe einen Helden-/Karten-Namen zum Suchen ein, ", "partielle Übereinstimmungen werden unterstützt."],
+    "输入英雄/地": [
+      "Gebe einen Helden-/Karten-Namen zum Suchen ein, ",
+      "partielle Übereinstimmungen werden unterstützt."
+    ],
     "我拥有的": "Von mir besessen",
-    "在上方库中，": ["Klicke in der obigen Gallerie auf den Avatar, um den Content, ", "den du möchtest, hinzuzufügen."],
-    "请至少选择一": "Bitte wähle zumindest einen Helden vor dem Speichern aus.",
+    "在上方库中，": [
+      "Klicke in der obigen Gallerie auf den Avatar, um den Content, ",
+      "den du möchtest, hinzuzufügen."
+    ],
+    "请至少选择一": [
+      "Bitte wähle zumindest einen Helden vor dem Speichern aus."
+    ],
     "攻略": "Leitfaden",
     "助手": "Assistent",
     "我的": "Mein",
-    " 返回": "Zurück",
-    "通关精华内容": "Schlüssel Content des Stufenabschluss",
+    "通关精华内容": "Supprimez les moments forts",
     "占位/截图/": "Platzhalter/Screenshits/Video Ressourcen",
-    "视频教学": "Video Tutorial",
+    "视频教学": "Tutoriel vidéo",
     "核心/必备英": "Haupt/Essentielle Helden",
     "副本强势英雄": "Empfohlene, Starke Helden Für Raids",
     "装备/神器/": "Ausrüstung/Artefakte/Ressourcen Für Aufstieg",
     "输出英雄": "DPS Helden",
     "防御英雄": "Verteidigungshelden",
     "功能英雄": "Unterstützungshelden",
-    "第1顺位": "Rang 1",
-    "第2顺位": "Rang 2",
-    "第3顺位": "Rang 3",
-    "第4顺位": "Rang 4",
-    "第5顺位": "Rang 5",
-    "第6顺位": "Rang 6",
-    "第7顺位": "Rang 7",
-    "第8顺位": "Rang 8",
-    "第9顺位": "Rang 9",
-    "第10顺位": "Rang 10",
-    "第11顺位": "Rang 11",
-    "第12顺位": "Rang 12",
-    "第13顺位": "Rang 13",
-    "第14顺位": "Rang 14",
-    "第15顺位": "Rang 15",
+    "第{x}顺位": "Position #{X}",
     "朝向向右": "Nach Rechts Gerichtet",
     "朝向向上": "Nach Oben Gerichtet",
     "朝向向左": "Nach Links Gerichtet",
     "朝向向下": "Nach Unten Gerichtet",
     "两件套/左侧": "Zwei-Teile-Set/Linke-Seite Ausrüstung",
     "三件套/右侧": "Drei-Teile-Set/Rechte-Seite Ausrüstung",
-    "推荐神器": "Empfohlene Artefakte",
-    "替换神器": "Artefakte Austauschen",
-    "替换英雄": "Helden Austauschen",
-    "图示预览": "Visuelle Vorschau",
-    "截图预览": "Screenshot Vorschau",
-    "点赞": "Like",
-    "引用": "Zitieren",
-    "收藏": "Lesezeichen",
-    "教学时间戳": "Unterrichtszeitstempel",
-    "举报": "Berichten",
-    "举报反馈": "Feedback Erstatten",
+    "推荐神器": "Artefacts recommandés",
+    "替换神器": "Remplacer l'artefact",
+    "替换英雄": "Remplacer le héros",
+    "图示预览": "Aperçu de l'image",
+    "截图预览": "Aperçu de la capture d'écran",
+    "点赞": "J'aime",
+    "引用": "Citer",
+    "收藏": "Favori",
+    "教学时间戳": "Tutoriel sur les repères temporels des vidéos",
+    "举报": "Signaler",
+    "举报反馈": "Suivi du signalement",
     "作者名": "Autorenname",
     "攻略标题": "Leitfadentitel",
-    "举报原因": "Grund der Berichterstattung",
-    "图片证据": "Bildbeweis",
+    "举报原因": "Raison du signalement",
+    "图片证据": "Image preuve",
     "提交": "Einreichen",
     "请输入举报原": "Bitte gib den Grund für deinen Bericht an.",
     "请输入作者名": "Bitte gib den Namen des Autors an.",
     "请输入攻略标": "Bitte gib den Titel des Leitfadens an.",
     "点击任意空白": "Klicke irgendwo, um zu verlassen",
     "综合": "Ausführlich",
-    "点赞排序": "Sortieren nach Likes",
-    "引用排序": "Sortieren nach Zitierungen",
-    "暂无收藏内容": ["Keine Lesezeichen vorhanden. Klicke den unteren Button,", "um Leitfäden anzusehen."],
-    "取消收藏": "Lesezeichen abbrechen",
+    "点赞排序": "Trier par j'aimes",
+    "引用排序": "Trier par citations",
+    "暂无收藏内容": [
+      "Keine Lesezeichen vorhanden. Klicke den unteren Button,",
+      "um Leitfäden anzusehen."
+    ],
+    "取消收藏": "Retirer des favoris",
     "提示": "Tipp",
-    "正在大批量取": ["Du bist dabei, Lesezeichen in großen Mengen zu löschen. Bist du", "dir sicher?"],
-    "请先选中要取": ["Bitte wähle die Artikel aus, für die du das Lesezeichen löschen möchtest, ", "bevor du erneut klickst."],
-    "暂无引用内容": "Kein zitierten Content. Klicke den unteren Button, um Leitfäden anzusehen.",
-    "剩余可引用次": "Verbleibende Zitate: 3",
+    "正在大批量取": [
+      "Du bist dabei, Lesezeichen in großen Mengen zu löschen. Bist du",
+      "dir sicher?"
+    ],
+    "请先选中要取": [
+      "Bitte wähle die Artikel aus, für die du das Lesezeichen löschen möchtest, ",
+      "bevor du erneut klickst."
+    ],
+    "暂无引用内容": [
+      "Kein zitierten Content. Klicke den unteren Button, um Leitfäden anzusehen."
+    ],
+    "剩余可引用次": "Verbleibende Zitate: {x}",
     "前往引用": "Gehe zu Zitaten",
-    "请先发布引用": ["Bitte veröffentliche deinen zitierten Content, bevor du mit dem Zitieren", "fortfährst."],
-    "查看原文": "Sieh dir das Original an",
-    "继续撰写": "Schreiben fortsetzen",
-    "被引用": "Zitiert",
-    "人点赞": "Leute liketen",
+    "请先发布引用": [
+      "Bitte veröffentliche deinen zitierten Content, bevor du mit dem Zitieren",
+      "fortfährst."
+    ],
+    "查看原文": "Voir le post original",
+    "继续撰写": "Continuer à écrire",
+    "被引用": "Cité par",
+    "人点赞": "J'aime",
     "原作 : ": "Originales Werk",
-    "分享": "Teilen",
+    "分享": "Partager",
     "攻略数": "Anzahl an Leitfäden",
     "被引用人数": "Anzahl an Leuten, die zitiert wurden",
     "被点赞次数": "Anzahl an Likes",
     "数据每日00": "Daten updaten jeden Tag um 00:00.",
     "语言切换": "Sprache Wechseln",
-    "批量管理": "Stapel Management",
+    "批量管理": "Gérer en masse",
     "引用数量": "Anzahl an Zitaten",
     "点赞数量": "Anzahl an Likes",
-    "暂未发布任何": ["Kein Content wurde bis jetzt veröffentlich. Klicke den unteren Button", "zum Veröffentlichen."],
-    "立即前往": "Gehe Jetzt",
-    "暂不支持更换": ["Diese Funktion wird noch nicht unterstützt. Bitte warte auf zukünftige", "Updates."],
-    "已发布": "Veröffentlich",
-    "已下架": "Heruntergenommen",
-    "上架": "Auflisten",
-    "下架": "Aufheben",
-    "删除": "Löschen",
-    "全选": "Alle Auswählen",
-    "退出": "Schließen",
+    "暂未发布任何": [
+      "Kein Content wurde bis jetzt veröffentlich. Klicke den unteren Button",
+      "zum Veröffentlichen."
+    ],
+    "立即前往": "Aller maintenant",
+    "暂不支持更换": [
+      "Diese Funktion wird noch nicht unterstützt. Bitte warte auf zukünftige",
+      "Updates."
+    ],
+    "已发布": "Publié",
+    "已下架": "Supprimé",
+    "上架": "Publier",
+    "下架": "Dépublier ",
+    "删除": "Supprimer",
+    "全选": "Tout sélectionner",
+    "退出": "Sortie",
     "请先选中具体": "Bitte wähle spezifischen Content aus vor dem Löschen.",
-    "正在删除您发": "Du löscht deinen veröffentlichen Content. Bist du dir sicher?",
+    "正在删除您发": [
+      "Du löscht deinen veröffentlichen Content. Bist du dir sicher?"
+    ],
     "确认": "Bestätigen",
-    "审核中": "In Prüfung",
-    "审核未通过": "Prüfung Fehlgeschlagen",
+    "审核中": "En cours d'examen",
+    "审核未通过": "Échec de l'examen",
     "点击任意空白处": "Klicke irgendwo zum schließen.",
     "发布攻略类型": "Wähle einen Leitfadentyp zum veröffentlichen.",
-    "快捷攻略发布": "Kurzanleitung Veröffentlichen",
-    "仅需要上传截": ["Du musst nur Screenshots und ein paar Worte hochladen, um einen Leitfaden", "zu veröffentlichen. "],
-    "你后期也可以": ["Du kannst eine Kurzanleitung später in einen ausführlichen", "Leitfaden umwandeln."],
-    "详细攻略发布": "Ausführlichen Leitfaden veröffentlichen",
-    "适合硬核玩家": ["Geeignet für Hardcore Spieler, um ausführliche Leitfäden zu schreiben.", ""],
-    "详细攻略不可": "Ausführliche Leitfäden können nicht in Kurzanleitungen umgewandelt werden.",
-    "必传内容": "Benötigter Content",
-    "点击此处选择": "Klick hier, um die Karte für dieses Team Setup auszuwählen.",
-    "点击此处选择本": "Klick hier, um die Helden für dieses Setup auszuwählen.",
+    "快捷攻略发布": "Guide rapide",
+    "仅需要上传截": [
+      "Du musst nur Screenshots und ein paar Worte hochladen, um einen Leitfaden",
+      "zu veröffentlichen. "
+    ],
+    "你后期也可以": [
+      "Du kannst eine Kurzanleitung später in einen ausführlichen",
+      "Leitfaden umwandeln."
+    ],
+    "详细攻略发布": "Guide détaillé",
+    "适合硬核玩家": [
+      "Geeignet für Hardcore Spieler, um ausführliche Leitfäden zu schreiben.",
+      ""
+    ],
+    "详细攻略不可": [
+      "Ausführliche Leitfäden können nicht in Kurzanleitungen umgewandelt werden."
+    ],
+    "必传内容": "Champs requis",
+    "点击此处选择": [
+      "Klick hier, um die Karte für dieses Team Setup auszuwählen."
+    ],
+    "点击此处选择本": [
+      "Klick hier, um die Helden für dieses Setup auszuwählen."
+    ],
     "主阵型截图": "Hauptaufstellungsscreenshot",
-    "通关视频": "Stufenabschlussvideo",
-    "上传本次通关": "Lade einen in-game Screenshot für dieses Team Setup hoch.",
-    "上传本次通关阵": "Lade ein Stufenabschlussvideo für dieses Team Setup hoch.",
-    "填写你本次阵": ["Fülle den Titel für dieses Team Setup aus, um mehr User anzuziehen,", "die deinen Leitfaden ansehen/benutzen."],
+    "通关视频": "Supprimer la vidéo",
+    "上传本次通关": [
+      "Lade einen in-game Screenshot für dieses Team Setup hoch."
+    ],
+    "上传本次通关阵": [
+      "Lade ein Stufenabschlussvideo für dieses Team Setup hoch."
+    ],
+    "填写你本次阵": [
+      "Fülle den Titel für dieses Team Setup aus, um mehr User anzuziehen,",
+      "die deinen Leitfaden ansehen/benutzen."
+    ],
     "非常推荐你填": "Sehr empfehlenswert, aber nicht vorausgesetzt.",
-    "非必填": "Optional",
+    "非必填": "Facultatif",
     "装备页截图": "Screenshot der Ausrüstung",
     "神器页截图": "Screenshot der Artefakte",
-    "描述你的通关": ["Beschreibe deine Stufenabschlussdetails, um Spielern zu helfen, dein Team", "Setup besser zu verstehen."],
+    "描述你的通关": [
+      "Beschreibe deine Stufenabschlussdetails, um Spielern zu helfen, dein Team",
+      "Setup besser zu verstehen."
+    ],
     "通关详细描述": "Stufenabschlussdetails",
     "一键上传并解": "1-Klick Hochladen Und Analysieren",
     "地图选择": "Kartenauswahl",
@@ -788,211 +1570,504 @@ export default {
     "竞技场": "Arena",
     "副本": "Raid",
     "战役": "Kampagne",
-    "进阶难度": "Fortgeschrittene Schwierigkeit",
-    "普通难度": "Normale Schwierigkeit",
-    "输入英雄名称": ["Gebe einen Heldennamen zum suchen ein, partielle Übereinstimmungen", "werden unterstützt."],
+    "进阶难度": "Difficulté avancée",
+    "普通难度": "Difficulté normale",
+    "输入英雄名称": [
+      "Gebe einen Heldennamen zum suchen ein, partielle Übereinstimmungen",
+      "werden unterstützt."
+    ],
     "搜索": "Suche",
     "高台位英雄": "Plattformhelden",
     "地面位英雄": "Bodenhelden",
-    "星级排序": "Sternrang",
-    "费用排序": "Kostenrang",
-    "已选英雄：0": "Ausgewählte Helden: 0",
-    "在上方库或常": ["Klicke in der obigen Gallerie oder unter \"oft benutzt\" den Avatar, um den ", "Content, den du möchtest, hinzuzufügen."],
-    "英雄选择": "Heldenauswahl",
+    "星级排序": "Trier par niveau d'étoile",
+    "费用排序": "Trier par coût",
+    "已选英雄：{": "Ausgewählte Helden: {x}",
+    "在上方库或常": [
+      "Klicke in der obigen Gallerie oder unter \"oft benutzt\" den Avatar, um den ",
+      "Content, den du möchtest, hinzuzufügen."
+    ],
+    "英雄选择": "Sélection de Héros",
     "取消": "Abbrechen",
     "暂无相关搜索": "Kein passender Suchcontent, bitte suche erneut.",
     "点击此处重置": "Klicke hier, zum zurückzusetzen.",
-    "点击英雄头像": "Klicke auf den Heldenavatar, um die Position zu verändern.",
-    "点击输入英雄": "Klicke, um den Grund für die Heldenempfehlung anzugeben.",
+    "点击英雄头像": [
+      "Klicke auf den Heldenavatar, um die Position zu verändern."
+    ],
+    "点击输入英雄": [
+      "Klicke, um den Grund für die Heldenempfehlung anzugeben."
+    ],
     "【点击此处设": "[Klicke hier, um die Heldeninfo zu festzulegen]",
     "【点击此处设置": "[Klicke hier, um einen Ersatzhelden festzulegen]",
-    "辅助补充信息": "Zusätzliche Informationen",
-    "其他信息": "Weitere Informationen",
-    "阵容标题": "Team Setup Titel",
-    "这里是阵容标": ["Hier ist der Team Setup Titel, er kann nicht mehr als fünfzehn Zeichen ", "lang sein, klicke hier, um mit dem Schreiben zu beginnen."],
+    "辅助补充信息": "Informations complémentaires",
+    "其他信息": "Autres notes",
+    "阵容标题": "Titre de la stratégie",
+    "这里是阵容标": [
+      "Hier ist der Team Setup Titel, er kann nicht mehr als fünfzehn Zeichen ",
+      "lang sein, klicke hier, um mit dem Schreiben zu beginnen."
+    ],
     "副标题": "Untertitel",
-    "这里是阵容标题": ["Hier ist der Team Setup Untertitel, er kann nicht mehr als fünfzig Zeichen ", "lang sein, klicke hier, um mit dem Schreiben zu beginnen."],
+    "这里是阵容标题": [
+      "Hier ist der Team Setup Untertitel, er kann nicht mehr als fünfzig Zeichen ",
+      "lang sein, klicke hier, um mit dem Schreiben zu beginnen."
+    ],
     "发布": "Veröffentlichen",
-    "点击英雄后，": ["Klicke auf den Helden, um ihn mit einem anderen Helden zu ersetzen oder", "den Platz frei zu lassen."],
+    "点击英雄后，": [
+      "Klicke auf den Helden, um ihn mit einem anderen Helden zu ersetzen oder",
+      "den Platz frei zu lassen."
+    ],
     "点击此处替换": "Klicke hier, um das Ersetzen zu beenden.",
     "装备选择": "Ausrüstungswahl",
     "神器选择": "Artefaktwahl",
-    "已选装备：3": "Ausgewählte Ausrüstung: 3",
-    "已选神器：0": "Ausgewählte Artefakte: 0",
+    "已选装备：{": "Ausgewählte Ausrüstung: {x}",
+    "已选神器：{": "Ausgewählte Artefakte: {x}",
     "普通": "Normal",
     "全部": "Alle",
-    "已选": "Ausgewählt",
+    "已选": "Sélectionné",
     "切换图片": "Bild Tauschen",
     "查看大图": "Großes Bild Ansehen",
     "点击编写时间": "Klicke, um einen Zeitstempel zu schreiben",
     "时间戳标题": "Zeitstempeltitel",
-    "点击此处输入": "Klicke hier für Eingaben. ",
-    "如  阵容截": ["Zum Beispiel: Formationsscreenshot/Setup Zeitplanung/", "Ausrüstungsscreenshot/Artefaktscreenshot/Wichtige Informationen/", "Andere Informationen"],
+    "点击此处输入": [
+      "Exemples : capture d'écran de l'équipe, timing de déploiement, image de  l'équipement/artefact, notes clés, etc."
+    ],
+    "如  阵容截": [
+      "Zum Beispiel: Formationsscreenshot/Setup Zeitplanung/",
+      "Ausrüstungsscreenshot/Artefaktscreenshot/Wichtige Informationen/",
+      "Andere Informationen"
+    ],
     "时间戳": "Zeitstempel",
     "时间戳具体时": "Spezifische Zeitspanne für den Zeitstempel.",
     "如  01:": [" Zum Beispiel: ", "01:06~03:35, usw."],
-    "这里是核心通": ["Hier ist der Haupt-Stufenabschlussleitfaden, er kann nicht länger als", "500 Wörter sein, klicke hier, um mit dem Schreiben zu beginnen."],
+    "这里是核心通": [
+      "Hier ist der Haupt-Stufenabschlussleitfaden, er kann nicht länger als",
+      "500 Wörter sein, klicke hier, um mit dem Schreiben zu beginnen."
+    ],
     "保存草稿": "Entwurf Speichern",
-    "保存草稿后，": ["Nach dem Speichern des Entwurfs kannst du mit dem Schreiben fortfahren, ", "indem du auf der [ Leitfaden ] Seite auf das \"+\" Icon klickst. Möchtest du ", "das Speichern des Entwurfs bestätigen?"],
-    "您已保存一篇": ["Du hast einen Entwurf gespeichert. Wenn du mit dem Speichern fortfährst,", "wird es den vorherigen Entwurf überschreiben. Bestätigst du, ", "dass du fortfahren möchten?"],
+    "保存草稿后，": [
+      "Nach dem Speichern des Entwurfs kannst du mit dem Schreiben fortfahren, ",
+      "indem du auf der [ Leitfaden ] Seite auf das \"+\" Icon klickst. Möchtest du ",
+      "das Speichern des Entwurfs bestätigen?"
+    ],
+    "您已保存一篇": [
+      "Du hast einen Entwurf gespeichert. Wenn du mit dem Speichern fortfährst,",
+      "wird es den vorherigen Entwurf überschreiben. Bestätigst du, ",
+      "dass du fortfahren möchten?"
+    ],
     "保存长图并分": "Speichere Langes Bild Und Teile",
-    "截图描述": "Screenshotbeschreibung",
-    "请输入本次截": "Bitte gib die Wellenzahl und andere Details dieses Screenshots ein.",
+    "截图描述": "Description de la capture d'écran",
+    "请输入本次截": [
+      "Bitte gib die Wellenzahl und andere Details dieses Screenshots ein."
+    ],
     "快捷设置英雄": "Schnellfestlegung Helden Informationen",
-    "朝向设置": "Ausrichtungseinstellung",
+    "朝向设置": "Orientation",
     "点击设置朝向": "Klicke, um die Ausrichtung festzulegen",
     "上阵顺序": "Setup-Ordnung",
     "点击设置上阵": "Klicke, um die Setup-Ordnung festzulegen",
-    "不同英雄的朝": ["Verschiedene Helden können dieselbe Ausrichtung haben, aber nicht die ", "gleiche Reihenfolge."],
-    "点击输入上阵": "Klicke für die Setup Order Eingabe, es sind nur Zahlen ≤ 15 erlaubt.",
-    "保存": "Speichern"
+    "不同英雄的朝": [
+      "Verschiedene Helden können dieselbe Ausrichtung haben, aber nicht die ",
+      "gleiche Reihenfolge."
+    ],
+    "点击输入上阵": [
+      "Klicke für die Setup Order Eingabe, es sind nur Zahlen ≤ 15 erlaubt."
+    ],
+    "保存": "Speichern",
+    "Tactic": "Taktiker",
+    "退出登录": "Se déconnecter",
+    "您还未选择需": [
+      "Vous n'avez sélectionné aucune stratégie à retirer des favoris."
+    ],
+    "暂无收藏内容，": [
+      "Pas de favoris pour l'instant. Appuyez sur le bouton ci-dessous pour explorer plus de stratégies !"
+    ],
+    "暂无引用内容，": [
+      "Pas de citations pour le moment. Appuyez sur le bouton ci-dessous pour vérifier les stratégies à référencer !"
+    ],
+    "原作": "Auteur original",
+    "阵型截图": "Capture d'écran de la formation",
+    "上传本次通关阵容": [
+      "Mettez en ligne une capture d'écran de votre configuration en jeu."
+    ],
+    "上传本次通关阵容的": [
+      "Mettez en ligne votre vidéo de gameplay avec cette équipe."
+    ],
+    "填写你本次阵容": [
+      "Écrivez un titre accrocheur pour votre configuration afin d'attirer plus de joueurs !"
+    ],
+    "核心通关策略": "Stratégie principale",
+    "点击此处选择本次": [
+      "Sélectionnez la carte où cette équipe à été utilisée."
+    ],
+    "非常推荐你填写": "(fortement recommandé mais non requis)",
+    "描述你的核心": [
+      "Décrivez la clé de votre stratégie—aidez les autres joueurs à comprendre comment fonctionne votre composition !"
+    ],
+    "发布攻略类型选": "Choisissez le type de publication",
+    "适合硬核玩家撰": [
+      "Pour des articles approfondis destinés aux joueurs expérimentés."
+    ],
+    "详细攻略不可以": [
+      "Note : les guides détaillés ne peuvent pas être convertis en guides rapides."
+    ],
+    "仅需要上传截图": [
+      "Mettez simplement en ligne vos captures d'écran ainsi qu'une courte description à publier."
+    ],
+    "你后期也可以将": [
+      "Vous pourrez le convertir plus tard en guide détaillé si vous le souhaitez."
+    ],
+    "站位/截图/": "Position/capture d'écran/Ressources vidéo",
+    "高台位": "Case de plateforme",
+    "地面位": "Case terrestre",
+    "新增图片": "Ajouter une image",
+    "切换视频": "Changer la vidéo",
+    "删除视频": "Supprimer la vidéo",
+    "点击上传视频": "Cliquez pour mettre en ligne la vidéo",
+    "【点击上方时": [
+      "Cliquez sur la case de repère temporel pour ajouter un nouveau repère temporel."
+    ],
+    "添加教学时间": "Ajouter un repère temporel d'enseignement",
+    "请输入副本强": "Héros recommandés pour cette étape",
+    "请输入通关详": "Description détaillé de la complétion",
+    "英雄面板神器": "Capture d'écran de la page d'artefact",
+    "点击此处选择英": "Cliquez ici pour sélectionner votre héros",
+    "英雄面板装备": "Capture d'écran de la page d'équipement",
+    "三件套右侧装": "Côté droit (Ensemble 3 pièces)",
+    "两件套左侧装": "Côté gauche (Ensemble 2 pièces)",
+    "点击此处设置": "Cliquez ici pour modifier les infos du héros",
+    "顺位": "Ordre de position",
+    "请输入阵容副": "Saisissez un sous-titre pour équipe",
+    "发布内容": "Publier",
+    "快捷设置英雄信": "Configuration rapide des infos du héros",
+    "点击上下空白": "Appuyez à l'extérieur pour fermer",
+    "分享攻略站链": "Partager le lien du site de stratégie",
+    "重新编辑": "Modifier à nouveau",
+    "两件套/左侧装": "2-pièces / Équipement du côté gauche ",
+    "三件套/右侧装": "3-pièces / Équipement du côté droit",
+    "已选装备": "Équipement sélectionné",
+    "已选神器": "Artefact sélectionné",
+    "武器胸甲": "Arme / armure",
+    "首饰": "Accessoires",
+    "最多选择15": "Vous pouvez sélectionner jusqu'à 15 héros.",
+    "时间戳具体时间": [
+      "Plage de repères temporels spécifique (ex. 01:20-06:25)"
+    ],
+    "如 01:2": "Cliquez ici pour saisir les informations",
+    "如阵容截图/": [
+      "Exemples : capture d'écran de l'équipe, timing de déploiement, image de  l'équipement/artefact, notes clés, etc."
+    ],
+    "暂无对应分类": [
+      "Aucun contenu trouvé dans cette catégorie. Appuyez ci-dessous pour réinitialiser."
+    ],
+    "暂无发布内容": [
+      "Aucune publication pour le moment—cliquez ci-dessous pour publier votre première !"
+    ],
+    "在上方库或常用": [
+      "Dans l'onglet bibliothèque ou favoris, appuyez sur un avatar pour ajouter du nouveau contenu."
+    ],
+    "暂无对应分类英": [
+      "Aucun héros trouvé dans cette catégorie. Appuyez ci-dessous pour réinitialiser."
+    ],
+    "已选英雄: ": "Héros sélectionnés : ",
+    "输入英雄名称进": [
+      "Rechercher par nom de héros (prend en charge les correspondances à un seul caractère)"
+    ],
+    "职业": "Classe",
+    "功能": "Rôle",
+    "输出": "DPS",
+    "防御": "Tank/Défense",
+    "未命名": "Sans titre",
+    "所有": "Tous",
+    "为了您的浏览": "Veuillez vous connecter pour continuer à naviguer.",
+    "立即登录": "Se connecter maintenant",
+    "Go!": "Aller !",
+    "官方消息": "Annonce officielle",
+    "转化为详细攻": "Convertir en guide détaillé",
+    "链接复制成功": "Lien copié avec succès !",
+    "请选择地图": "Veuillez sélectionner une carte.",
+    "请选择英雄": "Veuillez sélectionner un héros.",
+    "请填写阵容标": "Veuillez saisir un titre.",
+    "请上传阵型截": [
+      "Veuillez mettre en ligne une capture d'écran de la formation ou une vidéo de la complétion."
+    ],
+    "阵容标题不能": "Le titre ne peut pas dépasser 15 caractères.",
+    "核心通关策略不": [
+      "la stratégie principale ne peut pas dépasser 500 caractères."
+    ],
+    "文件大小不能": "La taille du fichier ne peut pas dépasser {X} MB.",
+    "请进入下一步": [
+      "Veuillez modifier les vidéos ou les images à l'étape suivante."
+    ],
+    "保存草稿后,": [
+      "Après avoir sauvegardé un brouillon, appuyez sur l'icône + sur la page Stratégie pour continuer à écrire plus tard."
+    ],
+    "是否确认保存": "Confirmer la sauvegarde du brouillon",
+    "您即将退出编": [
+      "Vous êtes sur le point de sortir de l'éditeur. Sauvegarder le brouillon avant de sortir?"
+    ],
+    "您目前编写的": "Votre progression actuelle ne sera pas sauvegardée.",
+    "建议一次性编": [
+      "Nous vous recommandons de terminer vos modifications avant de publier."
+    ],
+    "是否确认退出": "Confirmer la sortie? ",
+    "确认删除已选": "Confirmer la suppression de la stratégie sélectionnée?",
+    "您还未选择需要": "Vous n'avez sélectionné aucune stratégie à supprimer.",
+    "您还未选择需要修": [
+      "Vous n'avez sélectionnez aucune stratégie pour laquelle changer de statut."
+    ],
+    "攻略已经是上": "Cette stratégie est déjà publiée.",
+    "攻略已经是下": "Cette stratégie est déjà dépubliée.",
+    "同侧装备只能": "Un seul élément par côté peut être sélectionné.",
+    "当前神器选择": "Limite de sélection d'artefacts atteinte.",
+    "输入装备名称": [
+      "Recherche par nom d'équipement (prend en charge les correspondances à un seul caractère)"
+    ],
+    "输入神器/英": [
+      "Recherche par nom d'artefact/de héros (prend en charge les correspondances à un seul caractère)"
+    ],
+    "暂无相关神器": [
+      "Aucun artefact correspondant n'a été trouvé, veuillez réessayer."
+    ],
+    "暂无相关装备": [
+      "Aucun équipement correspond n'a été trouvé, veuillez réessayer."
+    ],
+    "视频未上传": "Vidéo non mise en ligne.",
+    "暂未填写": "Non remplie.",
+    "暂未选择": "Non sélectionné.",
+    "收藏成功~": "Ajouté aux favoris !",
+    "请先登录": "Veuillez d'abord vous connecter.",
+    "不能引用自己": "Vous ne pouvez pas citer votre propre stratégie.",
+    "链接已复制到": "Lien copié dans le presse-papiers.",
+    "请至少完整的": [
+      "Veuillez compléter au moins un repère temporel en entier ou supprimer tous les repères temporels."
+    ],
+    "时间戳标题或": [
+      "Le titre ou la plage du repère temporel dépasse la limite de caractères."
+    ],
+    "请先输入游戏": "Veuillez saisir votre ID de jeu.",
+    "请先输入区服": "Veuillez saisir l'ID de votre serveur.",
+    "发送中...": "Envoi...",
+    "验证码发送成": "Code de vérification envoyé avec succés !",
+    "验证码发送失": [
+      "Échec de l'envoi du code de vérification. Veuillez réessayer."
+    ],
+    "获取验证码": "Obtenir un code",
+    "您已有草稿内": "Vous avez déjà enregistré un brouillon.",
+    "还是创建新内": [
+      "Souhaitez-vous continuer à le modifier, ou en créer un nouveau?"
+    ],
+    "撰写草稿": "Continuer le brouillon",
+    "创建内容": "Créer un nouveau",
+    "该难度分类暂": "Aucune carte trouvée pour cette difficulté.",
+    "请点击上方按": "Essayez de changer de difficulté et vérifiez à nouveau.",
+    "丢弃草稿": "Supprimer le brouillon",
+    "请输入修改后的": "Veuillez saisir un nouveau mot de passe.",
+    "请输入区服ID": "Veuillez saisir l'ID du serveur.",
+    "请输入游戏内I": "Veuillez saisir L'ID en jeu.",
+    "请输入邮箱验证": "Veuillez saisir le code de vérification par e-mail.",
+    "修改密码成功": "Mot de passe mis à jour avec succés !",
+    "请求中...": "Requête en cours...",
+    "请前往游戏内邮": [
+      "Vérifiez votre messagerie en jeu pour obtenir le code de vérification"
+    ],
+    "点击\"修改密": [
+      "En cliquant sur Changer le mot de passe, vous acceptez nos {f} et {b}."
+    ],
+    "点击\"登录\"": [
+      "En cliquant sur Se connecter ou S'inscrire, vous acceptez nos {f} et {b}."
+    ],
+    "服务条款": "Conditions d'utilisation",
+    "隐私政策": "Politique de confidentialité",
+    "登录成功!": "Connexion réussie !",
+    "请输入验证码": "Veuillez saisir le code de vérification.",
+    "请先同意协议": "Veuillez d'abord accepter les conditions !",
+    "注册并登录成": "Inscription réussie !",
+    "请输入举报原因": "Veuillez saisir le motif du signalement.",
+    "请上传图片": "Veuillez mettre en ligne une image.",
+    "举报成功!": "Signalement transmis !",
+    "点击英雄后，选": [
+      "Après avoir sélectionné un héros, appuyez sur un autre héros ou un emplacement vide pour le remplacer."
+    ]
   },
   "de": {
     "【请先登录】": "Veuillez d'abord vous connecter.",
-    "为了您获得更": "Pour une meilleurs expérience, veuillez vous connecter pour continuer.",
+    "为了您获得更": [
+      "Pour une meilleurs expérience, veuillez vous connecter pour continuer."
+    ],
     "请输入密码": "Veuillez entrer votre mot de passe.",
     "注册账户": "Créer un compte",
     "忘记密码": "Mot de passe oublié",
     "登录": "Se connecter",
     "注册": "S'inscrire",
-    "用户名": "Nom d'utilisateur",
-    "请输入用户名": "Veuillez entrer votre nom d'utilisateur.",
-    "头像": ["En cliquant sur \"Se connecter\" ou \"S'inscrire\", vous acceptez nos conditions d'utilisations et notre politique de confidentialité."],
-    "密码": "Mot de passe",
+    "用户名": [""],
+    "请输入用户名": [""],
+    "头像": [
+      "En cliquant sur \"Se connecter\" ou \"S'inscrire\", vous acceptez nos conditions d'utilisations et notre politique de confidentialité."
+    ],
+    "密码": [""],
     "请输入登录密": "Veuillez entrer votre mot de passe de connexion.",
     "注册并登录": "S'inscrire et se connecter",
-    "返回": "Retour",
+    "返回": [""],
     "请输入修改后": "Veuillez entrer le nouveau mot de passe de connexion.",
-    "修改密码": "Changer de mot de passe",
-    "游戏ID": "ID d'utilisateur du jeu",
+    "修改密码": [""],
+    "游戏ID": [""],
     "请输入游戏内": "Veuillez entrer votre ID d'utilisateur du jeu.",
-    "区服ID": "ID du serveur",
+    "区服ID": [""],
     "请输入区服I": "Veuillez entrer l'ID du serveur.",
     "验证码": "Code de vérification",
     "请输入邮箱验": "Veuillez entrer le code de vérification.",
     "发送": "Envoyer",
-    "请前往游戏内": "Veuillez accéder à votre messagerie en jeu afin de récupérer le code de vérification.",
+    "请前往游戏内": [
+      "Veuillez accéder à votre messagerie en jeu afin de récupérer le code de vérification."
+    ],
     "Wiki入口": "Bouton réservé à la page du Wiki.",
-    "输入英雄/地": "Entrez le nom du héros/carte à rechercher, les correspondances partielles sont supportées.",
+    "输入英雄/地": [
+      "Entrez le nom du héros/carte à rechercher, les correspondances partielles sont supportées."
+    ],
     "我拥有的": "Possédés",
-    "在上方库中，": "Dans la galerie ci-dessus, cliquez sur l'avatar afin d'ajouter le contenu souhaité.",
-    "请至少选择一": "Veuillez sélectionner au moins un héros avant de sauvegarder.",
+    "在上方库中，": [
+      "Dans la galerie ci-dessus, cliquez sur l'avatar afin d'ajouter le contenu souhaité."
+    ],
+    "请至少选择一": [
+      "Veuillez sélectionner au moins un héros avant de sauvegarder."
+    ],
     "攻略": "Guide",
     "助手": "Assistant",
     "我的": "Mon",
-    " 返回": "Retour",
-    "通关精华内容": "Contenu clé de l'achèvement de l'étape",
+    "通关精华内容": [""],
     "占位/截图/": "Espace réservé/Capture d'écran/Ressources vidéo",
-    "视频教学": "Tutoriel vidéo",
+    "视频教学": [""],
     "核心/必备英": "Héros essentiels",
     "副本强势英雄": "Héros puissants recommandés pour les raids",
     "装备/神器/": "Équipement/Artefacts/Ressources d'améliorations",
     "输出英雄": "Héros DPS",
     "防御英雄": "Héros défensifs",
     "功能英雄": "Héros utilitaires",
-    "第1顺位": "Rang 1",
-    "第2顺位": "Rang 2",
-    "第3顺位": "Rang 3",
-    "第4顺位": "Rang 4",
-    "第5顺位": "Rang 5",
-    "第6顺位": "Rang 6",
-    "第7顺位": "Rang 7",
-    "第8顺位": "Rang 8",
-    "第9顺位": "Rang 9",
-    "第10顺位": "Rang 10",
-    "第11顺位": "Rang 11",
-    "第12顺位": "Rang 12",
-    "第13顺位": "Rang 13",
-    "第14顺位": "Rang 14",
-    "第15顺位": "Rang 15",
+    "第{x}顺位": [""],
     "朝向向右": "Vers la droite",
     "朝向向上": "Vers le haut",
     "朝向向左": "Vers la gauche",
     "朝向向下": "Vers le bas",
     "两件套/左侧": "Ensemble deux pièces/Équipement du côté gauche",
     "三件套/右侧": "Ensemble trois pièces/Équipement du côté droit",
-    "推荐神器": "Artefacts recommandés",
-    "替换神器": "Remplacer artefacts",
-    "替换英雄": "Remplacer héros",
-    "图示预览": "Prévisualisation",
-    "截图预览": "Prévisualisation de la capture d'écran",
-    "点赞": "Aimer",
-    "引用": "Citer",
-    "收藏": "Mettre en favoris",
-    "教学时间戳": "Repère temporel d'enseignement",
-    "举报": "Signaler",
-    "举报反馈": "Signaler un commentaire",
+    "推荐神器": [""],
+    "替换神器": [""],
+    "替换英雄": [""],
+    "图示预览": [""],
+    "截图预览": [""],
+    "点赞": [""],
+    "引用": [""],
+    "收藏": [""],
+    "教学时间戳": [""],
+    "举报": [""],
+    "举报反馈": [""],
     "作者名": "Nom de l'auteur",
     "攻略标题": "Titre du guide",
-    "举报原因": "Raison du signalement",
-    "图片证据": "Image preuve",
+    "举报原因": [""],
+    "图片证据": [""],
     "提交": "Soumettre",
     "请输入举报原": "Veuillez indiquer la raison du signalement.",
     "请输入作者名": "Veuillez indiquer le nom de l'auteur.",
     "请输入攻略标": "Veuillez indiquer le titre du guide",
     "点击任意空白": "Cliquez n'importe où pour quitter",
     "综合": "Compréhensif",
-    "点赞排序": "Tri par j'aime",
-    "引用排序": "Tri par citation",
-    "暂无收藏内容": "Pas de contenu en favoris. Cliquez sur le bouton ci-dessous pour voir les guides.",
-    "取消收藏": "Retirer des favoris",
+    "点赞排序": [""],
+    "引用排序": [""],
+    "暂无收藏内容": [
+      "Pas de contenu en favoris. Cliquez sur le bouton ci-dessous pour voir les guides."
+    ],
+    "取消收藏": [""],
     "提示": "Conseil",
-    "正在大批量取": "Vous êtes sur le point de retirer des favoris en masse. Êtes-vous sûr?",
-    "请先选中要取": "Veuillez sélectionner les articles à retirer des favoris avant de cliquer à nouveau.",
-    "暂无引用内容": "Pas de citation. Cliquez sur le bouton ci-dessous pour voir les guides.",
-    "剩余可引用次": "Citations restantes : 3",
+    "正在大批量取": [
+      "Vous êtes sur le point de retirer des favoris en masse. Êtes-vous sûr?"
+    ],
+    "请先选中要取": [
+      "Veuillez sélectionner les articles à retirer des favoris avant de cliquer à nouveau."
+    ],
+    "暂无引用内容": [
+      "Pas de citation. Cliquez sur le bouton ci-dessous pour voir les guides."
+    ],
+    "剩余可引用次": "Citations restantes : {x}",
     "前往引用": "Aller à la citation",
-    "请先发布引用": "Veuillez publier votre contenu cité avant de continuer à citer.",
-    "查看原文": "Voir l'original",
-    "继续撰写": "Continuer à écrire",
-    "被引用": "Cité",
-    "人点赞": "Des personnes ont aimé",
+    "请先发布引用": [
+      "Veuillez publier votre contenu cité avant de continuer à citer."
+    ],
+    "查看原文": [""],
+    "继续撰写": [""],
+    "被引用": [""],
+    "人点赞": [""],
     "原作 : ": "Travail original",
-    "分享": "Partager",
+    "分享": [""],
     "攻略数": "Nombre de guides",
     "被引用人数": "Nombre de personnes citées",
     "被点赞次数": "Nombre de j'aime",
     "数据每日00": "Mise à jour des données à 00:00 chaque jour.",
     "语言切换": "Changer de langue",
-    "批量管理": "Gestion des lots",
+    "批量管理": [""],
     "引用数量": "Nombre de citations",
     "点赞数量": "Nombre de j'aime",
-    "暂未发布任何": "Aucun contenu n'a encore été publié. Cliquez sur le bouton ci-dessous pour en publier.",
-    "立即前往": "Aller maintenant",
-    "暂不支持更换": "Cette fonctionnalité n'est pas encore supportée. Veuillez attendre les futures mises à jour.",
-    "已发布": "Publié",
-    "已下架": "Supprimé",
-    "上架": "Lister",
-    "下架": "Retirer de la liste",
-    "删除": "Supprimer",
-    "全选": "Tout sélectionner",
-    "退出": "Sortir",
-    "请先选中具体": "Veuillez sélectionner un contenu spécifique avant de supprimer.",
-    "正在删除您发": "Vous allez supprimer votre contenu publié. Êtes-vous sûre?",
+    "暂未发布任何": [
+      "Aucun contenu n'a encore été publié. Cliquez sur le bouton ci-dessous pour en publier."
+    ],
+    "立即前往": [""],
+    "暂不支持更换": [
+      "Cette fonctionnalité n'est pas encore supportée. Veuillez attendre les futures mises à jour."
+    ],
+    "已发布": [""],
+    "已下架": [""],
+    "上架": [""],
+    "下架": [""],
+    "删除": [""],
+    "全选": [""],
+    "退出": [""],
+    "请先选中具体": [
+      "Veuillez sélectionner un contenu spécifique avant de supprimer."
+    ],
+    "正在删除您发": [
+      "Vous allez supprimer votre contenu publié. Êtes-vous sûre?"
+    ],
     "确认": "Confirmer",
-    "审核中": "En cours d'examen",
-    "审核未通过": "Échec de l'examen",
+    "审核中": [""],
+    "审核未通过": [""],
     "点击任意空白处": "Cliquez n'importe où pour fermer.",
     "发布攻略类型": "Sélectionnez un type de guide à publier.",
-    "快捷攻略发布": "Publier un guide rapide",
-    "仅需要上传截": "Il suffit de télécharger des captures d'écran et de quelques mots pour publier un guide. ",
-    "你后期也可以": "Vous pouvez ensuite convertir un guide rapide en guide détaillé.",
-    "详细攻略发布": "Publier un guide détaillé",
-    "适合硬核玩家": "Convient aux joueurs expérimentés souhaitant écrire des guides détaillés. ",
-    "详细攻略不可": "Les guides détaillés ne peuvent être convertis en guides rapides.",
-    "必传内容": "Contenu requis",
-    "点击此处选择": "Cliquez ici pour sélectionner la carte pour cette configuration d'équipe.",
-    "点击此处选择本": "Cliquez ici pour sélectionner les héros utilisés dans cette configuration.",
+    "快捷攻略发布": [""],
+    "仅需要上传截": [
+      "Il suffit de télécharger des captures d'écran et de quelques mots pour publier un guide. "
+    ],
+    "你后期也可以": [
+      "Vous pouvez ensuite convertir un guide rapide en guide détaillé."
+    ],
+    "详细攻略发布": [""],
+    "适合硬核玩家": [
+      "Convient aux joueurs expérimentés souhaitant écrire des guides détaillés. "
+    ],
+    "详细攻略不可": [
+      "Les guides détaillés ne peuvent être convertis en guides rapides."
+    ],
+    "必传内容": [""],
+    "点击此处选择": [
+      "Cliquez ici pour sélectionner la carte pour cette configuration d'équipe."
+    ],
+    "点击此处选择本": [
+      "Cliquez ici pour sélectionner les héros utilisés dans cette configuration."
+    ],
     "主阵型截图": "Capture d'écran de la formation principale",
-    "通关视频": "Vidéo de l'achèvement de l'étape",
-    "上传本次通关": "Téléchargez des captures d'écrans en jeu de cette configuration d'équipe.",
-    "上传本次通关阵": "Téléchargez une vidéo d'achèvement de l'étape avec cette configuration d'équipe.",
-    "填写你本次阵": "Remplissez le titre de cette configuration d'équipe afin d'inciter plus d'utilisateurs à utiliser/regarder votre guide.",
+    "通关视频": [""],
+    "上传本次通关": [
+      "Téléchargez des captures d'écrans en jeu de cette configuration d'équipe."
+    ],
+    "上传本次通关阵": [
+      "Téléchargez une vidéo d'achèvement de l'étape avec cette configuration d'équipe."
+    ],
+    "填写你本次阵": [
+      "Remplissez le titre de cette configuration d'équipe afin d'inciter plus d'utilisateurs à utiliser/regarder votre guide."
+    ],
     "非常推荐你填": "Fortement recommandé, mais pas requis.",
-    "非必填": "Optionnel",
+    "非必填": [""],
     "装备页截图": "Capture d'écran de la page d'équipement",
     "神器页截图": "Capture d'écran de la page d'artefact",
-    "描述你的通关": "Décrivez les détails de l'achèvement de l'étape afin d'aider les joueurs à mieux comprendre votre configuration d'équipe.",
+    "描述你的通关": [
+      "Décrivez les détails de l'achèvement de l'étape afin d'aider les joueurs à mieux comprendre votre configuration d'équipe."
+    ],
     "通关详细描述": "Détails de l'achèvement de l'étape",
     "一键上传并解": "Téléchargement et analyse en un clic",
     "地图选择": "Sélection de la carte",
@@ -1000,63 +2075,227 @@ export default {
     "竞技场": "Arène",
     "副本": "Raid",
     "战役": "Campagne",
-    "进阶难度": "Difficulté avancée",
-    "普通难度": "Difficulté normale",
-    "输入英雄名称": "Entrez le nom du héros à rechercher, les correspondances partielles sont supportées.",
+    "进阶难度": [""],
+    "普通难度": [""],
+    "输入英雄名称": [
+      "Entrez le nom du héros à rechercher, les correspondances partielles sont supportées."
+    ],
     "搜索": "Rechercher",
     "高台位英雄": "Héros de plateforme",
     "地面位英雄": "Héros terrestre",
-    "星级排序": "Classement par étoile",
-    "费用排序": "Classement par coût",
-    "已选英雄：0": "Héros sélectionnés : 0",
-    "在上方库或常": "Dans la galerie ci-dessus ou fréquemment utilisée, cliquez sur l'avatar afin d'ajouter le contenu souhaité.",
-    "英雄选择": "Sélection de héros",
+    "星级排序": [""],
+    "费用排序": [""],
+    "已选英雄：{": "Héros sélectionnés : {x}",
+    "在上方库或常": [
+      "Dans la galerie ci-dessus ou fréquemment utilisée, cliquez sur l'avatar afin d'ajouter le contenu souhaité."
+    ],
+    "英雄选择": [""],
     "取消": "Annuler",
-    "暂无相关搜索": "Aucun contenu associé, veuillez effectuer une nouvelle recherche.",
+    "暂无相关搜索": [
+      "Aucun contenu associé, veuillez effectuer une nouvelle recherche."
+    ],
     "点击此处重置": "Cliquez ici pour réinitialiser.",
     "点击英雄头像": "Cliquez sur l'avatar du héros pour changer la position.",
-    "点击输入英雄": "Cliquez pour sélectionner la raison de recommandation du héros.",
+    "点击输入英雄": [
+      "Cliquez pour sélectionner la raison de recommandation du héros."
+    ],
     "【点击此处设": "[Cliquez ici pour définir les informations du héros]",
     "【点击此处设置": "[Cliquez ici pour définir le héros de remplacement]",
-    "辅助补充信息": "Informations supplémentaires",
-    "其他信息": "Autres informations",
-    "阵容标题": "Titre de la configuration d'équipe",
-    "这里是阵容标": "Voici le titre de la configuration d'équipe, ne peut pas  dépasser quinze caractères, cliquez ici pour commencer à taper.",
+    "辅助补充信息": [""],
+    "其他信息": [""],
+    "阵容标题": [""],
+    "这里是阵容标": [
+      "Voici le titre de la configuration d'équipe, ne peut pas  dépasser quinze caractères, cliquez ici pour commencer à taper."
+    ],
     "副标题": "Sous-titre",
-    "这里是阵容标题": "Voici le sous-titre de la configuration d'équipe, ne peut pas dépasser cinquante caractères, cliquez ici pour commencer à taper.",
+    "这里是阵容标题": [
+      "Voici le sous-titre de la configuration d'équipe, ne peut pas dépasser cinquante caractères, cliquez ici pour commencer à taper."
+    ],
     "发布": "Publier",
-    "点击英雄后，": "Cliquez sur le héros pour le remplacer par un autre héros ou un espace vide.",
+    "点击英雄后，": [
+      "Cliquez sur le héros pour le remplacer par un autre héros ou un espace vide."
+    ],
     "点击此处替换": "Cliquez ici pour terminer le remplacement.",
     "装备选择": "Sélection d'équipement",
     "神器选择": "Sélection d'artefact",
-    "已选装备：3": "Équipement sélectionné : 0",
-    "已选神器：0": "Artefacts sélectionnés : 0",
+    "已选装备：{": "Équipement sélectionné : {x}",
+    "已选神器：{": "Artefacts sélectionnés : {x}",
     "普通": "Normal",
     "全部": "Tous",
-    "已选": "Sélectionné",
+    "已选": [""],
     "切换图片": "Changer d'image",
     "查看大图": "Agrandir l'image",
     "点击编写时间": "Cliquez pour mettre un repère temporel",
     "时间戳标题": "Titre du repère temporel",
-    "点击此处输入": "Cliquez ici pour saisir. ",
-    "如  阵容截": "Exemple : capture décran de la formation/timing de la mise en place/ capture d'écran de l'équipement/capture d'écran de l'artefact/ informations clés/autres informations.",
+    "点击此处输入": [""],
+    "如  阵容截": [
+      "Exemple : capture décran de la formation/timing de la mise en place/ capture d'écran de l'équipement/capture d'écran de l'artefact/ informations clés/autres informations."
+    ],
     "时间戳": "Repère temporel",
     "时间戳具体时": "Plage de temps spécifique pour le repère temporel. ",
     "如  01:": "Exemple : 01:06~03:35, etc.",
-    "这里是核心通": "Voici le guide principal d'achèvement de l'étape, ne peut dépasser 500 mots, cliquez ici pour commencer à taper.",
+    "这里是核心通": [
+      "Voici le guide principal d'achèvement de l'étape, ne peut dépasser 500 mots, cliquez ici pour commencer à taper."
+    ],
     "保存草稿": "Enregistrer le brouillon",
-    "保存草稿后，": ["Après avoir enregistrer le brouillon, vous pouvez continuer à écrire sur la page 【Guide】en cliquant sur l'icône \"+\". Confirmez-vous l'enregistrement du brouillon ?"],
-    "您已保存一篇": "Vous avez enregistré un brouillon. Si vous enregistrez à nouveau, le brouillon précédent sera écrasé. Voulez vous continuer ? ",
+    "保存草稿后，": [
+      "Après avoir enregistrer le brouillon, vous pouvez continuer à écrire sur la page 【Guide】en cliquant sur l'icône \"+\". Confirmez-vous l'enregistrement du brouillon ?"
+    ],
+    "您已保存一篇": [
+      "Vous avez enregistré un brouillon. Si vous enregistrez à nouveau, le brouillon précédent sera écrasé. Voulez vous continuer ? "
+    ],
     "保存长图并分": "Enregistrer l'image longue et partager",
-    "截图描述": "Description de la capture d'écran",
-    "请输入本次截": "Veuillez saisir le numéro de la vague ainsi que les autres détails de cette capture d'écran.",
+    "截图描述": [""],
+    "请输入本次截": [
+      "Veuillez saisir le numéro de la vague ainsi que les autres détails de cette capture d'écran."
+    ],
     "快捷设置英雄": "Définir rapidement les informations du héros",
-    "朝向设置": "Réglage de l'orientation",
+    "朝向设置": [""],
     "点击设置朝向": "Cliquez pour régler l'orientation",
     "上阵顺序": "Configuration de l'ordre",
     "点击设置上阵": "Cliquez pour définir la configuration de l'ordre",
-    "不同英雄的朝": "Différents héros peuvent avoir la même orientation, mais l'ordre ne peut pas être le même.",
-    "点击输入上阵": "Cliquez pour saisir la configuration de l'ordre, uniquement des nombres ≤ 15.",
-    "保存": "Sauvegarder"
+    "不同英雄的朝": [
+      "Différents héros peuvent avoir la même orientation, mais l'ordre ne peut pas être le même."
+    ],
+    "点击输入上阵": [
+      "Cliquez pour saisir la configuration de l'ordre, uniquement des nombres ≤ 15."
+    ],
+    "保存": "Sauvegarder",
+    "退出登录": [""],
+    "您还未选择需": [""],
+    "暂无收藏内容，": [""],
+    "暂无引用内容，": [""],
+    "原作": [""],
+    "阵型截图": [""],
+    "上传本次通关阵容": [""],
+    "上传本次通关阵容的": [""],
+    "填写你本次阵容": [""],
+    "核心通关策略": [""],
+    "点击此处选择本次": [""],
+    "非常推荐你填写": [""],
+    "描述你的核心": [""],
+    "发布攻略类型选": [""],
+    "适合硬核玩家撰": [""],
+    "详细攻略不可以": [""],
+    "仅需要上传截图": [""],
+    "你后期也可以将": [""],
+    "站位/截图/": [""],
+    "高台位": [""],
+    "地面位": [""],
+    "新增图片": [""],
+    "切换视频": [""],
+    "删除视频": [""],
+    "点击上传视频": [""],
+    "【点击上方时": [""],
+    "添加教学时间": [""],
+    "请输入副本强": [""],
+    "请输入通关详": [""],
+    "英雄面板神器": [""],
+    "点击此处选择英": [""],
+    "英雄面板装备": [""],
+    "三件套右侧装": [""],
+    "两件套左侧装": [""],
+    "点击此处设置": [""],
+    "顺位": [""],
+    "请输入阵容副": [""],
+    "发布内容": [""],
+    "快捷设置英雄信": [""],
+    "点击上下空白": [""],
+    "分享攻略站链": [""],
+    "重新编辑": [""],
+    "两件套/左侧装": [""],
+    "三件套/右侧装": [""],
+    "已选装备": [""],
+    "已选神器": [""],
+    "武器胸甲": [""],
+    "首饰": [""],
+    "最多选择15": [""],
+    "时间戳具体时间": [""],
+    "如 01:2": [""],
+    "如阵容截图/": [""],
+    "暂无对应分类": [""],
+    "暂无发布内容": [""],
+    "在上方库或常用": [""],
+    "暂无对应分类英": [""],
+    "已选英雄: ": [""],
+    "输入英雄名称进": [""],
+    "职业": [""],
+    "功能": [""],
+    "输出": [""],
+    "防御": [""],
+    "未命名": [""],
+    "所有": [""],
+    "为了您的浏览": [""],
+    "立即登录": [""],
+    "Go!": [""],
+    "官方消息": [""],
+    "转化为详细攻": [""],
+    "链接复制成功": [""],
+    "请选择地图": [""],
+    "请选择英雄": [""],
+    "请填写阵容标": [""],
+    "请上传阵型截": [""],
+    "阵容标题不能": [""],
+    "核心通关策略不": [""],
+    "文件大小不能": [""],
+    "请进入下一步": [""],
+    "保存草稿后,": [""],
+    "是否确认保存": [""],
+    "您即将退出编": [""],
+    "您目前编写的": [""],
+    "建议一次性编": [""],
+    "是否确认退出": [""],
+    "确认删除已选": [""],
+    "您还未选择需要": [""],
+    "您还未选择需要修": [""],
+    "攻略已经是上": [""],
+    "攻略已经是下": [""],
+    "同侧装备只能": [""],
+    "当前神器选择": [""],
+    "输入装备名称": [""],
+    "输入神器/英": [""],
+    "暂无相关神器": [""],
+    "暂无相关装备": [""],
+    "视频未上传": [""],
+    "暂未填写": [""],
+    "暂未选择": [""],
+    "收藏成功~": [""],
+    "请先登录": [""],
+    "不能引用自己": [""],
+    "链接已复制到": [""],
+    "请至少完整的": [""],
+    "时间戳标题或": [""],
+    "请先输入游戏": [""],
+    "请先输入区服": [""],
+    "发送中...": [""],
+    "验证码发送成": [""],
+    "验证码发送失": [""],
+    "获取验证码": [""],
+    "您已有草稿内": [""],
+    "还是创建新内": [""],
+    "撰写草稿": [""],
+    "创建内容": [""],
+    "该难度分类暂": [""],
+    "请点击上方按": [""],
+    "丢弃草稿": [""],
+    "请输入修改后的": [""],
+    "请输入区服ID": [""],
+    "请输入游戏内I": [""],
+    "请输入邮箱验证": [""],
+    "修改密码成功": [""],
+    "请求中...": [""],
+    "请前往游戏内邮": [""],
+    "点击\"修改密": [""],
+    "点击\"登录\"": [""],
+    "服务条款": [""],
+    "隐私政策": [""],
+    "登录成功!": [""],
+    "请输入验证码": [""],
+    "请先同意协议": [""],
+    "注册并登录成": [""],
+    "请输入举报原因": [""],
+    "请上传图片": [""],
+    "举报成功!": [""],
+    "点击英雄后，选": [""]
   }
 }

@@ -65,7 +65,6 @@ async function readAssets(rule) {
         const tempReg = new RegExp(`^[^'\\n]*(${v})[^'\\n]*$`)
 
         // 属性
-        debugger
         if (attrReg.test(line)) {
           const matches = line.match(attrReg)
 
