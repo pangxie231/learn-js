@@ -11,6 +11,11 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
 // 读取文件
+
+// 或者说先全部找到
+// 筛选的时候要筛选出前后为字符串，或者空格或者标签
+
+
 async function readAssets(rule) {
   const files = await glob(rule, { ignore: 'node_modules/**' })
 
@@ -20,6 +25,7 @@ async function readAssets(rule) {
   const htmlNotes = /^\s*<!--.*?-->.*?$/
   
   
+  
   for (const file of files) {
     let data = readFileSync(path.join(__dirname, file), {
       encoding: 'utf-8'
@@ -27,9 +33,9 @@ async function readAssets(rule) {
     
     Object.entries(zhLang).forEach(([k, v]) => {
       // ^[\s]*(<\w>)?攻略.*?$
-      // const baseReg = new RegExp(`^.*?${v}.*?$`, 'gm')
+      const baseReg = new RegExp(`^.*?${v}.*?$`, 'gm')
       // v2版本
-      const baseReg = new RegExp(`^( )*(<\\w.*?>)?${v}.*?$`, 'gm')
+      // const baseReg = new RegExp(`^( )*(<\\w.*?>)?${v}.*?$`, 'gm')
       
       // 已经是多语言写法
       const alreadyT = new RegExp(`^.*?\\$?t\\(('|")${v}('|")\\).*?$`)
@@ -47,12 +53,23 @@ async function readAssets(rule) {
       }
       // console.log('🚀 ~ readAssets ~ lines:', lines)
 
+
+      // 引号包裹的
+      const quouteWrapReg = new RegExp(`.*?('|")${v}\\1.*?`)
+      // 前后是空格或者标签符号的
+      const spaceOrTagReg =  new RegExp(`^.*?( |>)${v}( |<).*?$`)
+
+
       // debugger
       // 去掉注释的行
       const filterLines = lines.filter(line => {
-        return !(doubleSlash.test(line) || htmlNotes.test(line) || (alreadyT.test(line)))
+        if(v === '请选择地图') {
+          debugger
+        }
+        // debugger
+        return !(doubleSlash.test(line) || htmlNotes.test(line) || (alreadyT.test(line))) && (quouteWrapReg.test(line) || spaceOrTagReg.test(line))
       })
-
+      
       console.log('🚀 ~ readAssets ~ filterLines:', filterLines)
 
 
@@ -68,27 +85,20 @@ async function readAssets(rule) {
         if (attrReg.test(line)) {
           const matches = line.match(attrReg)
 
-          // console.log('🚀 ~ readAssets ~ matches:', matches)
 
-          // line.
-          // matches[0]
-          // debugger
           ret = line.replace(matches[1], ':$&').replace(matches[2], `$t('${k}')`)
 
-          // template下的直接字符串
         } else if(tempReg.test(line)) {
           const matches =  line.match(tempReg)
           ret = line.replace(matches[1], `{{ $t(${k}) }}`)
 
         } else {
-          // 直接替换
           ret = line.replace(new RegExp(`('|")${v}('|")`), `t('${k}')`)
 
         }
 
 
         data = data.replace(line, ret)
-        // console.log('data', data)
       })
     })
 

@@ -656,11 +656,11 @@ const doNotTouch = () => {
             <div h-full w-130px color="#d0b78f" bg="#393a44" grid place-content-center b-r text-center px-10px
               box-border>
               <!-- TODO -->
-              核心通关策略</div>
+              {{ $t(核心通关策略) }}</div>
             <div h-full grid place-content-center b-l-solid b-l-1 b="#66686d" flex-1 px-20px flex items-center>
               <!-- TODO -->
               <textarea max-length='15' v-model="formModel.strategy_desc" w='100%' h='55px' resize-none outline-none
-                box-border color-white bg='transparent' b-0px block placeholder="描述你的核心通关策略，可以帮助玩家更好的了解你的阵容搭配原因">
+                box-border color-white bg='transparent' b-0px block :placeholder="$t('描述你的核心')">
               </textarea>
             </div>
             <div grid place-content-center b="#66686d" pos-absolute right-5px bottom-5px text-20px>
