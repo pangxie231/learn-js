@@ -7,53 +7,20 @@
 
 
 function debounce(fn, wait, canFirst) {
-  let timeout = null
-  let debouncedFn = null
 
-  const clear = function () {
-    clearTimeout(timeout)
-    timeout = null
-    debouncedFn = null
+  const timeout = null
+  const debouncedFn = null
+
+  const clear = ()=> {
+    
   }
+  const flush = ()=> {}
 
-  const flush = function () {
-    clear()
-    debouncedFn()
-  }
+  const wrapFn = function() {}
 
-  const debounceWrapper = function (...args) {
-    const context = this
+  wrapFn.cancel = clear
+  wrapFn.flush = flush
 
-    if (canFirst) {
-      fn.call(context, ...args)
-      canFirst = false
-      return
-    }
+  return wrapFn
 
-    clear()
-
-    debouncedFn = function () {
-      fn.call(context, ...args)
-    }
-
-    timeout = setTimeout(() => {
-      debouncedFn()
-    }, wait);
-
-  }
-
-  debounceWrapper.cancel = clear
-  debounceWrapper.flush = flush
-
-  return debounceWrapper
 }
-
-const fn = debounce(function (a) {
-  console.log('debounce', a)
-}, 500)
-
-fn('lh')
-fn('dg')
-fn('jg')
-fn.flush()
-// fn.cancel()
