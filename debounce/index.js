@@ -1,82 +1,96 @@
 // 防抖函数
+// 这个函数有什么功能
+// 参数 fn wait callFist
+// 返回 一个函数
+// 通过返回函数调用flush 提前结束定时器
+// 通过返回函数调用clear,清除定时器
 
-// 基础防抖
-// 是否立即执行一次
-// cancel 直接调用函数 取消函数
-// flush，直接调用函数，立即执行
-
-// 分析的时候应该知道每一步的时候，作用域内有哪些变量可用
-// 这样就能更好的知道，用这些变量来做一些事情，或者对它进行清理
-
-// 接收三个参数
-// fn 防抖函数
-// wait 防抖的时间
-// callFirst 是否需要立即执行一次
 function debounce(fn, wait, callFirst) {
+  let timeout = null
+  let debouncedFn = null
 
+  // flush需要调用
+  // 1.清除定时器
+  // 2.直接调用debounce函数,并且需要重置该函数
   // 
-  var timeout = null;
-  var debouncedFn = null;
 
-  var clear = function () {
+  // 重新开始定时任务前需要调用
+  // 1.清除定时器, timeout重置为null
+  // 2.debounce函数重置为null
+
+  // 外部取消定时器时需要调用
+  // 和flush大致相同
+
+  const clear = function () {
     if (timeout) {
-      clearTimeout(timeout);
+      clearTimeout(timeout)
 
-      debouncedFn = null;
-      timeout = null;
+      timeout = null
+      debouncedFn = null
     }
-  };
+  }
 
-  var flush = function () {
-    var call = debouncedFn;
-    clear();
+  // 获取防抖函数
+  // 调用clar
+  // 执行防抖函数
+  const flush = function () {
+    const fn = debouncedFn
+    clear()
 
-    if (call) {
-      call();
+    if (fn) {
+      fn()
     }
-  };
+  }
 
-  var debounceWrapper = function () {
+  const wrapper = function (...args) {
+    // 直接调用
+    // wait为各种False值时
     if (!wait) {
-      return fn.apply(this, arguments);
+      return fn.apply(this, args)
     }
 
-    var context = this;
-    var args = arguments;
-    var callNow = callFirst && !timeout;
-    clear();
+    // 定时调用
+    // 分为两种情况
+    // 是否需要立马调用一次
+    const callNow = !timeout && callFirst
+    const context = this
+    clear()
 
     debouncedFn = function () {
-      fn.apply(context, args);
-    };
-
-    timeout = setTimeout(function () {
-      timeout = null;
+      return fn.apply(context, args)
+    }
+    
+    timeout = setTimeout(() => {
+      timeout = null
 
       if (!callNow) {
-        var call = debouncedFn;
-        debouncedFn = null;
+        const call = debouncedFn
+        debouncedFn = null
 
-        return call();
+        return call()
       }
     }, wait);
 
     if (callNow) {
-      return debouncedFn();
+      return debouncedFn()
     }
-  };
 
-  debounceWrapper.cancel = clear;
-  debounceWrapper.flush = flush;
+  }
 
-  return debounceWrapper;
+  wrapper.cancel = clear
+  wrapper.flush = flush
+
+  return wrapper
+
 }
+
 const fn = debounce(function (a) {
   console.log('debounce', a)
-}, 500)
+}, 500, false)
 
 fn('lh')
 fn('dg')
 fn('jg')
-fn.flush()
+
+// fn.flush()
 // fn.cancel()
