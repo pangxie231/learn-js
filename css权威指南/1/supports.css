@@ -1,0 +1,11 @@
+@supports (color: red)  {
+  /* p {
+    color: red;
+  } */
+
+  /* 媒体查询嵌套 */
+  @media screen {}
+
+  /* 媒体查询嵌套 */
+  @media print {}
+}

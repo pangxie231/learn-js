@@ -1,0 +1,72 @@
+/* .c1 {
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+}
+
+p {
+  color: red;
+} */
+
+/* [class] {
+  color: aqua;
+}
+
+[class][id] {
+  color: pink;
+} */
+
+/* 标签选择符需要写在前面
+  p[class] 正确
+  [class]p 错误
+*/
+/* p[class] {
+  color: red;
+} */
+
+/* p[class='c2'] {
+  color: palevioletred;
+} */
+
+
+/* |= */
+/* p[lang|=en] {
+  color: blueviolet;
+} */
+
+/* ~= */
+/* p[class~=user] {
+   color: blueviolet;
+} */
+
+/* *= */
+/* p[class*=user] {
+  color: blueviolet;
+} */
+
+/* ^= */ 
+/* p[class^=user] {
+  color: blueviolet;
+} */
+
+
+/* $= */
+/* p[class$='user'] {
+  color: blueviolet;
+} */
+
+/* 加上i，可以使属性值忽略大小写 */
+p[class*='user' i] {
+  color: blueviolet
+}
+
+
+
+
+
+
+
+
+
+
+
