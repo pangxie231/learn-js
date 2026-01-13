@@ -56,15 +56,53 @@ p {
 } */
 
 /* 加上i，可以使属性值忽略大小写 */
-p[class*='user' i] {
+/* p[class*='user' i] {
   color: blueviolet
+} */
+
+
+/* p + p {
+  color: blueviolet;
+} */
+
+
+/* 选中em元素为p元素后的兄弟元素(em不能在p元素之前) */
+/* p ~ em {
+  color: blueviolet;
+} */
+
+/* a:link {
+  color: aqua;
+}
+a:visited {
+  color: coral;
+}
+a:active {
+  color: blue;
+} */
+
+/* 在html中指html元素 */
+/* :root {
+  border: 2px solid red;
+} */
+
+img {
+  width: 40px;
+  height: 40px;
+  background-color: aquamarine;
 }
 
+p:empty {
+  border: 2px solid brown;
+}
 
+img:only-child {
+  border: 1px solid red;
+}
 
-
-
-
+a img:only-of-type {
+  border: 1px solid red;
+}
 
 
 
