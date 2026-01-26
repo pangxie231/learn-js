@@ -45,11 +45,11 @@ var obj2 = {
 // (function hello() {})()
 
 // 另外一种匿名函数表达式
-(function IIFE(fn){
-  fn(window)
-})(function def(global) {
-  var a = 3
-})
+// (function IIFE(fn){
+//   fn(window)
+// })(function def(global) {
+//   var a = 3
+// })
 
 
 
@@ -57,3 +57,80 @@ var obj2 = {
 undefined = 100
 NaN = 100
 Infinity = 100
+
+// try catch的块作用域
+// try {
+//   throw Error('Custom Error')
+// } catch (error) {
+//   console.log('error', error)
+// }
+// 外部无法访问到error变量
+// console.log('error', error)
+
+
+// Es6之前的块作用域实现方案
+// try {
+//   throw 2
+// } catch (a) {
+//   console.log('a', a)
+// }
+// console.log('a', a)
+
+
+// 闭包
+// for(var i = 1; i <= 5; i++) {
+//   (function(i){
+//     setTimeout(function() {
+//       console.log(i)
+//     }, i * 1000)
+//   })(i)
+// }
+
+
+
+const m = (function() {
+  const modules = {}
+
+  const define = (name, deps, impl)=> {
+
+    for(let i = 0; i<deps.length; i++) {
+      deps[i] = modules[deps[i]]
+    }
+
+    debugger
+    modules[name] = impl.apply(null, deps)
+  }
+
+  const get = (name)=> {
+    return modules[name]
+  }
+
+  return {
+    define,
+    get
+  }
+})();
+
+m.define('foo', [], function() {
+  return {
+    hello(name) {
+      console.log('hello' + name)
+    }
+  }
+})
+
+m.define('bar', ['foo'], function(foo) {
+
+  return {
+    say(name) {
+      foo.hello(name)
+    }
+  }
+})
+
+const foo = m.get('foo')
+foo.hello('杰哥')
+
+const bar = m.get('bar')
+bar.say('杰哥')
+

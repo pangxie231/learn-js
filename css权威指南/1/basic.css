@@ -44,7 +44,7 @@ p {
   color: blueviolet;
 } */
 
-/* ^= */ 
+/* ^= */
 /* p[class^=user] {
   color: blueviolet;
 } */
@@ -86,7 +86,7 @@ a:active {
   border: 2px solid red;
 } */
 
-img {
+/* img {
   width: 40px;
   height: 40px;
   background-color: aquamarine;
@@ -102,9 +102,113 @@ img:only-child {
 
 a img:only-of-type {
   border: 1px solid red;
+} */
+
+
+
+/* first-of-type */
+.wrap span:first-of-type {
+  color: red;
+}
+
+.wrap span:last-of-type {
+  color: brown;
 }
 
 
+.wrap2 {
+  width: 412px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.wrap2 div {
+  background-color: aqua;
+  width: 200px;
+  height: 200px;
+}
+
+.wrap2 div:last-child:nth-child(odd) {
+  width: 100%;
+}
 
 
+.wrap3 {
+  width: 412px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
 
+.wrap3 div {
+  background-color: aqua;
+  width: 198px;
+  height: 198px;
+  border: 1px solid brown;
+  box-sizing: border-box;
+}
+
+/* 只有1个项目 */
+.wrap3 div:only-child {
+  width: 100%;
+}
+
+/* 只有2个项目 */
+.wrap3 div:nth-child(1):nth-last-child(2),
+.wrap3 div:nth-child(2):nth-last-child(1) {
+  width: 50%;
+}
+
+/* 只有3个项目 */
+.wrap3 div:nth-child(1):nth-last-child(3),
+.wrap3 div:nth-child(1):nth-last-child(3)~div {
+  width: 33.3%;
+}
+
+/* 只有4个项目 */
+.wrap3 div:nth-child(1):nth-last-child(4),
+.wrap3 div:nth-child(1):nth-last-child(4)~div {
+  width: 25%;
+}
+
+/* 验证未通过 */
+/* input的type为number, 在min和max内,但是和step不匹配,也视为验证不通过 */
+.wrap4 input:invalid {
+  color: red;
+}
+/* 在范围内,一般是input的type为number, 在min和max内 */
+.wrap4 input:in-range {
+  color: blue;
+}
+
+p:target {
+  font-weight: bold;
+  color: red;
+}
+
+.wrap4 {
+  width: 200;
+}
+.wrap4 p:first-child::first-letter {
+  font-size: 200%;
+  font-style: italic;
+}
+
+.wrap4 p:nth-child(2)::first-line {
+  color: red;
+}
+
+.wrap5 {
+  margin-top: 40px;
+}
+
+.wrap5 a:visited {
+  color: red;
+}
+.wrap5 a:link {
+  color: pink;
+}
+.wrap5 a:active {
+  color: yellow;
+}
